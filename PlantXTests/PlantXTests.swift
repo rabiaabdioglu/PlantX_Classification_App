@@ -2,13 +2,13 @@
 //  PlantXTests.swift
 //  PlantXTests
 //
-//  Created by MacbookAir on 30.10.2022.
+//  Created by Rabia Abdioğlu on 30.11.2022.
 //
 
 import XCTest
 @testable import PlantX
 
-class PlantXTests: XCTestCase {
+final class PlantXTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,54 +1,746 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fmg-VF-FjA">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home View Controller-->
+        <scene sceneID="mJG-Wb-2rs">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="HomeSB" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fmg-VF-FjA" customClass="HomeViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O6W-vU-ZsG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XS8-Uj-7dc">
-                                <rect key="frame" x="186" y="117" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-Qg-lJL">
+                                <rect key="frame" x="1" y="-17" width="388" height="878"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="a6G-bf-btZ">
+                                <rect key="frame" x="-30" y="718" width="450" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="gf8-kb-6Tv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="yQx-BU-AAF">
+                                <rect key="frame" x="24" y="324" width="342" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="pcr-sM-nLw"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Bitkilerim" imagePadding="110" cornerStyle="fixed">
+                                    <imageReference key="image" image="book.closed.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.96078431372549022" alpha="0.18972485310349302" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="light"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToMyPlantWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="osU-sO-osh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16° " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1h-fO-but">
+                                <rect key="frame" x="152" y="143" width="86" height="56"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kocaeli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTD-bb-eTI">
+                                <rect key="frame" x="158.66666666666666" y="222" width="73" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="6C1-bZ-GYy">
+                                <rect key="frame" x="24" y="429" width="152" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="Zfg-HD-WC8"/>
+                                    <constraint firstAttribute="height" constant="132" id="jaQ-tc-wrp"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Bul" imagePadding="9" cornerStyle="fixed">
+                                    <imageReference key="image" image="text.magnifyingglass" catalog="system" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" scale="default" weight="regular"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToFindWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="QdT-cx-gNw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="tYj-fm-Lb8">
+                                <rect key="frame" x="238" y="429" width="128" height="132"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Geçmiş" imagePadding="9" cornerStyle="fixed">
+                                    <imageReference key="image" image="leaf.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="light"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509804840000002" green="0.50196081400000003" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToHistoryWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="nQf-gq-WnB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKc-3O-wOQ">
+                                <rect key="frame" x="24" y="777" width="69" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house" catalog="system" title="" imagePadding="0.0">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odx-nH-Fq9">
+                                <rect key="frame" x="311.66666666666669" y="777" width="67" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToHistoryWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="Z7Q-YQ-eA3"/>
+                                    <action selector="HomeToMyPlantWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="OW8-vI-fBJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-gc-SDf">
+                                <rect key="frame" x="153.66666666666666" y="738" width="83" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="FFt-LY-PtK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="camera.circle.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color systemColor="secondarySystemBackgroundColor"/>
+                                            <color systemColor="opaqueSeparatorColor"/>
+                                            <color red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToFindWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="P98-pW-Vcp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merhaba Rabia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOC-qX-mg0">
+                                <rect key="frame" x="164" y="82" width="127" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ODH-Uv-tuY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mxe-Qg-lJL" firstAttribute="top" secondItem="O6W-vU-ZsG" secondAttribute="topMargin" constant="-64" id="17c-up-geb"/>
+                            <constraint firstItem="odx-nH-Fq9" firstAttribute="leading" secondItem="iuU-gc-SDf" secondAttribute="trailing" constant="75" id="2Z7-PH-eod"/>
+                            <constraint firstItem="g1h-fO-but" firstAttribute="top" secondItem="nOC-qX-mg0" secondAttribute="bottom" constant="38" id="5wO-cd-BJE"/>
+                            <constraint firstItem="yQx-BU-AAF" firstAttribute="leading" secondItem="6C1-bZ-GYy" secondAttribute="leading" id="8Ff-Dt-Jyk"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="a6G-bf-btZ" secondAttribute="bottom" constant="-34" id="BBt-MZ-3Yd"/>
+                            <constraint firstItem="ODH-Uv-tuY" firstAttribute="bottom" secondItem="iuU-gc-SDf" secondAttribute="bottom" constant="10" id="E3n-hx-9M1"/>
+                            <constraint firstItem="a6G-bf-btZ" firstAttribute="leading" secondItem="O6W-vU-ZsG" secondAttribute="leadingMargin" constant="-46" id="FsN-Uc-K1B"/>
+                            <constraint firstItem="nOC-qX-mg0" firstAttribute="top" secondItem="ODH-Uv-tuY" secondAttribute="top" constant="35" id="FtU-BM-77z"/>
+                            <constraint firstItem="mxe-Qg-lJL" firstAttribute="leading" secondItem="ODH-Uv-tuY" secondAttribute="leading" constant="1" id="Ikk-8t-Svg"/>
+                            <constraint firstItem="qKc-3O-wOQ" firstAttribute="top" secondItem="odx-nH-Fq9" secondAttribute="top" id="KYW-fo-iZq"/>
+                            <constraint firstItem="ODH-Uv-tuY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nOC-qX-mg0" secondAttribute="trailing" symbolic="YES" id="KZh-qC-LaS"/>
+                            <constraint firstItem="mxe-Qg-lJL" firstAttribute="centerX" secondItem="QTD-bb-eTI" secondAttribute="centerX" id="KwV-KO-8ec"/>
+                            <constraint firstItem="iuU-gc-SDf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qKc-3O-wOQ" secondAttribute="trailing" constant="8" symbolic="YES" id="Lzk-BR-OTk"/>
+                            <constraint firstItem="yQx-BU-AAF" firstAttribute="trailing" secondItem="tYj-fm-Lb8" secondAttribute="trailing" id="QAh-uq-Ye3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qKc-3O-wOQ" secondAttribute="bottom" constant="-11" id="Rta-ay-Ia6"/>
+                            <constraint firstItem="QTD-bb-eTI" firstAttribute="centerX" secondItem="yQx-BU-AAF" secondAttribute="centerX" id="SJq-B8-OSP"/>
+                            <constraint firstItem="6C1-bZ-GYy" firstAttribute="leading" secondItem="qKc-3O-wOQ" secondAttribute="leading" id="T3J-iL-ZLm"/>
+                            <constraint firstItem="tYj-fm-Lb8" firstAttribute="leading" secondItem="6C1-bZ-GYy" secondAttribute="trailing" constant="62" id="YWp-Ch-IAK"/>
+                            <constraint firstItem="g1h-fO-but" firstAttribute="centerX" secondItem="O6W-vU-ZsG" secondAttribute="centerX" id="aVL-wt-El9"/>
+                            <constraint firstItem="yQx-BU-AAF" firstAttribute="top" secondItem="QTD-bb-eTI" secondAttribute="bottom" constant="76" id="awk-sP-LmQ"/>
+                            <constraint firstItem="mxe-Qg-lJL" firstAttribute="centerY" secondItem="O6W-vU-ZsG" secondAttribute="centerY" id="cvE-y3-p94"/>
+                            <constraint firstItem="g1h-fO-but" firstAttribute="centerX" secondItem="QTD-bb-eTI" secondAttribute="centerX" id="cwb-pt-aio"/>
+                            <constraint firstItem="QTD-bb-eTI" firstAttribute="top" secondItem="g1h-fO-but" secondAttribute="bottom" constant="23" id="e8v-My-0dq"/>
+                            <constraint firstItem="6C1-bZ-GYy" firstAttribute="top" secondItem="tYj-fm-Lb8" secondAttribute="top" id="gXN-3i-axn"/>
+                            <constraint firstItem="6C1-bZ-GYy" firstAttribute="top" secondItem="yQx-BU-AAF" secondAttribute="bottom" constant="28" id="h8y-s5-yd5"/>
+                            <constraint firstItem="ODH-Uv-tuY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="odx-nH-Fq9" secondAttribute="trailing" id="hTx-fX-2Lj"/>
+                            <constraint firstItem="a6G-bf-btZ" firstAttribute="centerX" secondItem="iuU-gc-SDf" secondAttribute="centerX" id="ie1-43-9VU"/>
+                            <constraint firstItem="yQx-BU-AAF" firstAttribute="leading" secondItem="ODH-Uv-tuY" secondAttribute="leading" constant="24" id="t5R-tu-9YF"/>
+                            <constraint firstItem="yQx-BU-AAF" firstAttribute="centerX" secondItem="a6G-bf-btZ" secondAttribute="centerX" id="vrq-j3-KhI"/>
+                            <constraint firstItem="nOC-qX-mg0" firstAttribute="leading" secondItem="ODH-Uv-tuY" secondAttribute="leading" constant="164" id="wPT-EQ-ByQ"/>
+                            <constraint firstItem="6C1-bZ-GYy" firstAttribute="bottom" secondItem="tYj-fm-Lb8" secondAttribute="bottom" id="xuY-hG-8iS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vpN-Dy-d2V"/>
+                    <connections>
+                        <segue destination="7XC-Jo-dcN" kind="showDetail" identifier="HomeToHistory" animates="NO" id="uZG-7h-yA1"/>
+                        <segue destination="N0t-k1-ayj" kind="showDetail" identifier="HomeToMyPlant" animates="NO" id="aZK-yy-IeQ"/>
+                        <segue destination="0yG-Y9-lC1" kind="showDetail" identifier="HomeToFind" animates="NO" id="qqf-1p-TxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fy-TH-cYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972.46376811594212" y="-36.160714285714285"/>
+        </scene>
+        <!--My Plants View Controller-->
+        <scene sceneID="3FM-TC-TKy">
+            <objects>
+                <viewController storyboardIdentifier="MyPlantsSB" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" keyboardType="off" id="N0t-k1-ayj" customClass="MyPlantsViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="735-tZ-ET2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="L1v-hW-Vtb">
+                                <rect key="frame" x="0.0" y="-17" width="390" height="878"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="426-2v-agC">
+                                <rect key="frame" x="-31" y="718" width="452" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="2Xe-ph-mEX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="osr-YA-Fqu">
+                                <rect key="frame" x="29" y="151" width="332" height="145"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="" imagePadding="110" cornerStyle="fixed">
+                                    <imageReference key="image" image="a 3" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="0.0" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="light"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiidle-leaf fig" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0i-dQ-r4m">
+                                <rect key="frame" x="167" y="181" width="135" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftada 2 kez " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-HH-1Xc">
+                                <rect key="frame" x="198" y="233" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQQ-we-JII">
-                                <rect key="frame" x="174" y="620" width="158" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                    <backgroundConfiguration key="background" image="square.and.arrow.down.fill" catalog="system"/>
-                                    <color key="baseBackgroundColor" systemColor="systemBlueColor"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="j1Y-fd-4ou">
+                                <rect key="frame" x="29" y="323" width="332" height="145"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="" imagePadding="110" cornerStyle="fixed">
+                                    <imageReference key="image" image="a 3" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="light"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiidle-leaf fig" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLQ-dw-kvb">
+                                <rect key="frame" x="167" y="353" width="135" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftada 2 kez " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsY-Rn-dod">
+                                <rect key="frame" x="198" y="405" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-rz-CMF">
+                                <rect key="frame" x="29" y="503" width="332" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="MUI-ak-zoJ"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="" imagePadding="110" cornerStyle="fixed">
+                                    <imageReference key="image" image="a 3" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="light"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiidle-leaf fig" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-Jh-xPa">
+                                <rect key="frame" x="167" y="533" width="135" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haftada 2 kez " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM3-wJ-xaq">
+                                <rect key="frame" x="198" y="585" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYF-Ss-whJ">
+                                <rect key="frame" x="16" y="47" width="60" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical" variableValue="0.0">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemGray5Color"/>
+                                            <color white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="medium" weight="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="MyPlantToHomeWithPlants:" destination="N0t-k1-ayj" eventType="touchUpInside" id="JNa-OV-QqH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitkilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hti-2t-RkL">
+                                <rect key="frame" x="90" y="52" width="210" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.27450980390000002" green="0.40000000000000002" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHs-yU-u6s">
+                                <rect key="frame" x="24" y="777" width="69" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house" catalog="system" title="" imagePadding="0.0">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="MyPlantToHomeWithPlants:" destination="N0t-k1-ayj" eventType="touchUpInside" id="EnX-ui-bTx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jq3-mq-0oR">
+                                <rect key="frame" x="311.33333333333331" y="777" width="67" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJH-8X-oQT">
+                                <rect key="frame" x="153.66666666666666" y="732" width="83" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Kmt-0m-iEV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="camera.circle.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color systemColor="secondarySystemBackgroundColor"/>
+                                            <color systemColor="opaqueSeparatorColor"/>
+                                            <color red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="MyPlantToFindWithPlants:" destination="N0t-k1-ayj" eventType="touchUpInside" id="T35-ok-NcB"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="HaC-BL-qa3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z0i-dQ-r4m" firstAttribute="trailing" secondItem="rLQ-dw-kvb" secondAttribute="trailing" id="0V6-1O-9DB"/>
+                            <constraint firstItem="hti-2t-RkL" firstAttribute="centerX" secondItem="735-tZ-ET2" secondAttribute="centerX" id="6FQ-b0-ve8"/>
+                            <constraint firstItem="Z0i-dQ-r4m" firstAttribute="leading" secondItem="rLQ-dw-kvb" secondAttribute="leading" id="6nn-dG-aLC"/>
+                            <constraint firstItem="426-2v-agC" firstAttribute="leading" secondItem="735-tZ-ET2" secondAttribute="leadingMargin" constant="-47" id="8GG-0F-wfk"/>
+                            <constraint firstItem="wHs-yU-u6s" firstAttribute="top" secondItem="Jq3-mq-0oR" secondAttribute="top" id="8QC-Ki-43y"/>
+                            <constraint firstItem="Jq3-mq-0oR" firstAttribute="leading" secondItem="EJH-8X-oQT" secondAttribute="trailing" constant="74.666666666666686" id="8WW-7w-IDU"/>
+                            <constraint firstItem="HaC-BL-qa3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jq3-mq-0oR" secondAttribute="trailing" id="A5s-Om-g8T"/>
+                            <constraint firstItem="SYF-Ss-whJ" firstAttribute="leading" secondItem="735-tZ-ET2" secondAttribute="leadingMargin" id="CwI-vW-dp4"/>
+                            <constraint firstItem="rLQ-dw-kvb" firstAttribute="top" secondItem="osr-YA-Fqu" secondAttribute="bottom" constant="57" id="D2q-jk-jsK"/>
+                            <constraint firstItem="j1Y-fd-4ou" firstAttribute="leading" secondItem="q0F-rz-CMF" secondAttribute="leading" id="Dcn-IT-Ihg"/>
+                            <constraint firstItem="HaC-BL-qa3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RM3-wJ-xaq" secondAttribute="trailing" symbolic="YES" id="EK4-UB-h8h"/>
+                            <constraint firstItem="HaC-BL-qa3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ip2-HH-1Xc" secondAttribute="trailing" symbolic="YES" id="GUb-xR-88Q"/>
+                            <constraint firstItem="Ip2-HH-1Xc" firstAttribute="top" secondItem="Z0i-dQ-r4m" secondAttribute="bottom" constant="23" id="GaH-nR-Dls"/>
+                            <constraint firstItem="rLQ-dw-kvb" firstAttribute="trailing" secondItem="EZc-Jh-xPa" secondAttribute="trailing" id="KqG-Vb-Nnt"/>
+                            <constraint firstItem="j1Y-fd-4ou" firstAttribute="top" secondItem="Ip2-HH-1Xc" secondAttribute="bottom" constant="69" id="NyZ-tr-0eM"/>
+                            <constraint firstItem="Z0i-dQ-r4m" firstAttribute="leading" secondItem="HaC-BL-qa3" secondAttribute="leading" constant="167" id="Psl-Vs-yDN"/>
+                            <constraint firstItem="HaC-BL-qa3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QsY-Rn-dod" secondAttribute="trailing" symbolic="YES" id="QJO-nG-m1r"/>
+                            <constraint firstAttribute="bottom" secondItem="426-2v-agC" secondAttribute="bottom" id="V2g-92-Sez"/>
+                            <constraint firstItem="osr-YA-Fqu" firstAttribute="leading" secondItem="j1Y-fd-4ou" secondAttribute="leading" id="We7-VD-box"/>
+                            <constraint firstItem="EJH-8X-oQT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wHs-yU-u6s" secondAttribute="trailing" constant="8" symbolic="YES" id="Xx5-ud-Xep"/>
+                            <constraint firstItem="osr-YA-Fqu" firstAttribute="top" secondItem="SYF-Ss-whJ" secondAttribute="bottom" constant="66" id="Ybv-di-ZdA"/>
+                            <constraint firstItem="426-2v-agC" firstAttribute="centerX" secondItem="EJH-8X-oQT" secondAttribute="centerX" id="YcH-2V-sDV"/>
+                            <constraint firstItem="Ip2-HH-1Xc" firstAttribute="leading" secondItem="HaC-BL-qa3" secondAttribute="leading" constant="198" id="bvA-T2-Jcc"/>
+                            <constraint firstItem="QsY-Rn-dod" firstAttribute="leading" secondItem="RM3-wJ-xaq" secondAttribute="leading" id="cjc-0D-TRL"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="wHs-yU-u6s" secondAttribute="bottom" constant="-11" id="czG-rO-WkU"/>
+                            <constraint firstItem="L1v-hW-Vtb" firstAttribute="leading" secondItem="735-tZ-ET2" secondAttribute="leading" id="dGQ-8p-WiE"/>
+                            <constraint firstItem="wHs-yU-u6s" firstAttribute="leading" secondItem="HaC-BL-qa3" secondAttribute="leading" constant="24" id="dvh-We-MQM"/>
+                            <constraint firstItem="SYF-Ss-whJ" firstAttribute="bottom" secondItem="hti-2t-RkL" secondAttribute="bottom" id="erH-6j-HWb"/>
+                            <constraint firstItem="q0F-rz-CMF" firstAttribute="top" secondItem="QsY-Rn-dod" secondAttribute="bottom" constant="77" id="hXJ-9N-aUw"/>
+                            <constraint firstItem="SYF-Ss-whJ" firstAttribute="top" secondItem="HaC-BL-qa3" secondAttribute="top" id="hgX-eJ-o8N"/>
+                            <constraint firstItem="QsY-Rn-dod" firstAttribute="top" secondItem="rLQ-dw-kvb" secondAttribute="bottom" constant="23" id="iL0-Go-LMO"/>
+                            <constraint firstItem="HaC-BL-qa3" firstAttribute="bottom" secondItem="EJH-8X-oQT" secondAttribute="bottom" constant="16" id="ie7-ht-fEK"/>
+                            <constraint firstItem="HaC-BL-qa3" firstAttribute="trailing" secondItem="hti-2t-RkL" secondAttribute="trailing" constant="90" id="jGa-dZ-osy"/>
+                            <constraint firstItem="hti-2t-RkL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SYF-Ss-whJ" secondAttribute="trailing" constant="8" symbolic="YES" id="jRG-tZ-bDQ"/>
+                            <constraint firstItem="osr-YA-Fqu" firstAttribute="trailing" secondItem="j1Y-fd-4ou" secondAttribute="trailing" id="lqd-Pb-o7O"/>
+                            <constraint firstItem="L1v-hW-Vtb" firstAttribute="centerX" secondItem="426-2v-agC" secondAttribute="centerX" id="njT-An-Kck"/>
+                            <constraint firstItem="Ip2-HH-1Xc" firstAttribute="leading" secondItem="QsY-Rn-dod" secondAttribute="leading" id="q2l-QR-f3c"/>
+                            <constraint firstItem="L1v-hW-Vtb" firstAttribute="centerY" secondItem="735-tZ-ET2" secondAttribute="centerY" id="q33-1R-fsM"/>
+                            <constraint firstItem="HaC-BL-qa3" firstAttribute="trailing" secondItem="Z0i-dQ-r4m" secondAttribute="trailing" constant="88" id="qZU-Dk-MOk"/>
+                            <constraint firstItem="Z0i-dQ-r4m" firstAttribute="top" secondItem="hti-2t-RkL" secondAttribute="bottom" constant="96" id="s00-R8-Dyk"/>
+                            <constraint firstItem="hti-2t-RkL" firstAttribute="centerX" secondItem="osr-YA-Fqu" secondAttribute="centerX" id="tEV-eU-96Z"/>
+                            <constraint firstItem="rLQ-dw-kvb" firstAttribute="leading" secondItem="EZc-Jh-xPa" secondAttribute="leading" id="tH7-4e-S4D"/>
+                            <constraint firstItem="RM3-wJ-xaq" firstAttribute="top" secondItem="EZc-Jh-xPa" secondAttribute="bottom" constant="23" id="va6-kU-J3h"/>
+                            <constraint firstItem="j1Y-fd-4ou" firstAttribute="trailing" secondItem="q0F-rz-CMF" secondAttribute="trailing" id="wPs-Wk-E8k"/>
+                            <constraint firstItem="q0F-rz-CMF" firstAttribute="top" secondItem="j1Y-fd-4ou" secondAttribute="bottom" constant="35" id="wSm-YM-YQc"/>
+                            <constraint firstItem="q0F-rz-CMF" firstAttribute="centerX" secondItem="EJH-8X-oQT" secondAttribute="centerX" id="wxf-SF-jEx"/>
+                            <constraint firstItem="L1v-hW-Vtb" firstAttribute="top" secondItem="735-tZ-ET2" secondAttribute="topMargin" constant="-64" id="wze-uF-ycx"/>
+                            <constraint firstItem="EZc-Jh-xPa" firstAttribute="top" secondItem="j1Y-fd-4ou" secondAttribute="bottom" constant="65" id="yJt-CZ-GhJ"/>
+                            <constraint firstItem="osr-YA-Fqu" firstAttribute="leading" secondItem="HaC-BL-qa3" secondAttribute="leading" constant="29" id="zDx-uk-nvS"/>
+                            <constraint firstItem="j1Y-fd-4ou" firstAttribute="top" secondItem="osr-YA-Fqu" secondAttribute="bottom" constant="27" id="zbO-FM-0ga"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="fmg-VF-FjA" kind="showDetail" identifier="MyPlantToHome" animates="NO" id="ZMi-Em-saq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LCg-9X-1aC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746.376811594203" y="-36.830357142857139"/>
+        </scene>
+        <!--Find View Controller-->
+        <scene sceneID="e9w-A4-xIY">
+            <objects>
+                <viewController storyboardIdentifier="FindSB" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0yG-Y9-lC1" userLabel="Find View Controller" customClass="FindViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZP5-xB-8Et">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FVi-0O-3U1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3We-Hq-qsz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3p-HM-0VQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="-36"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="n7A-Sq-lzT">
+            <objects>
+                <viewController storyboardIdentifier="HistorySB" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7XC-Jo-dcN" userLabel="History View Controller" customClass="HistoryViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hRK-5b-Rz9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleToFill" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="N7B-Sj-mXx">
+                                <rect key="frame" x="0.0" y="-17" width="390" height="878"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-1E-pd2">
+                                <rect key="frame" x="-31" y="723" width="452" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="z0M-kp-2dA"/>
+                                </constraints>
+                            </imageView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="dNf-sQ-9il">
+                                <rect key="frame" x="24" y="140" width="342" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="pY5-hc-xaD"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Fiddle.." imagePadding="0.0" cornerStyle="fixed">
+                                    <imageReference key="image" image="ellipsis" catalog="system" symbolScale="small" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="cYy-Wn-Igc">
+                                <rect key="frame" x="24" y="233" width="342" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Y0o-n3-odr"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Fiddle.." imagePadding="0.0" cornerStyle="fixed">
+                                    <imageReference key="image" image="ellipsis" catalog="system" symbolScale="small" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-Ee-Uc5">
+                                <rect key="frame" x="24" y="336" width="342" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="LHb-Ph-yZ4"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Fiddle.." imagePadding="0.0" cornerStyle="fixed">
+                                    <imageReference key="image" image="ellipsis" catalog="system" symbolScale="small" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjf-1V-6lm">
+                                <rect key="frame" x="16" y="51" width="59" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical" variableValue="0.0">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemGray5Color"/>
+                                            <color white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="medium" weight="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HistoryToHomeWithPlants:" destination="7XC-Jo-dcN" eventType="touchUpInside" id="cZh-ED-Owj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geçmiş" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-ce-hzG">
+                                <rect key="frame" x="150.66666666666666" y="53" width="89" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.27450980390000002" green="0.40000000000000002" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txr-d8-ibS">
+                                <rect key="frame" x="24" y="784" width="69" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="house" catalog="system" title="" imagePadding="0.0">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HistoryToHomeWithPlants:" destination="7XC-Jo-dcN" eventType="touchUpInside" id="36y-Oc-Qdd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b1-05-CMF">
+                                <rect key="frame" x="299" y="784" width="67" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemGrayColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HistoryToMyPlantWithPlants:" destination="7XC-Jo-dcN" eventType="touchUpInside" id="G8r-KC-ZcS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaT-6k-YIk">
+                                <rect key="frame" x="153.66666666666666" y="748" width="83" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="3mz-UU-PrQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="camera.circle.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color systemColor="secondarySystemBackgroundColor"/>
+                                            <color systemColor="opaqueSeparatorColor"/>
+                                            <color red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HistoryToFindWithPlants:" destination="7XC-Jo-dcN" eventType="touchUpInside" id="vkI-f3-rFR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w2e-st-Fjb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cYy-Wn-Igc" firstAttribute="top" secondItem="dNf-sQ-9il" secondAttribute="bottom" constant="16" id="03x-p1-Wf3"/>
+                            <constraint firstItem="dNf-sQ-9il" firstAttribute="top" secondItem="Hjf-1V-6lm" secondAttribute="bottom" constant="51" id="4P1-d0-oKA"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FgQ-1E-pd2" secondAttribute="bottom" constant="-39" id="A6l-F6-OeF"/>
+                            <constraint firstItem="N7B-Sj-mXx" firstAttribute="centerY" secondItem="hRK-5b-Rz9" secondAttribute="centerY" id="BMV-dq-6Ug"/>
+                            <constraint firstItem="7b1-05-CMF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zaT-6k-YIk" secondAttribute="trailing" id="CYV-Ph-ZJa"/>
+                            <constraint firstItem="N7B-Sj-mXx" firstAttribute="top" secondItem="hRK-5b-Rz9" secondAttribute="topMargin" constant="-64" id="DHd-SR-qAG"/>
+                            <constraint firstItem="CD6-Ee-Uc5" firstAttribute="centerX" secondItem="zaT-6k-YIk" secondAttribute="centerX" id="F4P-Sh-RVD"/>
+                            <constraint firstItem="FgQ-1E-pd2" firstAttribute="leading" secondItem="hRK-5b-Rz9" secondAttribute="leadingMargin" constant="-47" id="H0l-3s-16E"/>
+                            <constraint firstItem="txr-d8-ibS" firstAttribute="top" secondItem="7b1-05-CMF" secondAttribute="top" id="LuQ-zJ-KVW"/>
+                            <constraint firstItem="yGY-ce-hzG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hjf-1V-6lm" secondAttribute="trailing" constant="8" symbolic="YES" id="MGt-Hf-IAf"/>
+                            <constraint firstItem="w2e-st-Fjb" firstAttribute="trailing" secondItem="7b1-05-CMF" secondAttribute="trailing" constant="24.000000000000057" id="N6T-Hv-rGp"/>
+                            <constraint firstItem="cYy-Wn-Igc" firstAttribute="trailing" secondItem="CD6-Ee-Uc5" secondAttribute="trailing" id="NVO-mU-miz"/>
+                            <constraint firstItem="yGY-ce-hzG" firstAttribute="centerX" secondItem="hRK-5b-Rz9" secondAttribute="centerX" id="OaM-f3-AmT"/>
+                            <constraint firstItem="Hjf-1V-6lm" firstAttribute="leading" secondItem="hRK-5b-Rz9" secondAttribute="leadingMargin" id="Tib-Lr-G0h"/>
+                            <constraint firstItem="dNf-sQ-9il" firstAttribute="trailing" secondItem="cYy-Wn-Igc" secondAttribute="trailing" id="W84-jn-wF4"/>
+                            <constraint firstItem="zaT-6k-YIk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="txr-d8-ibS" secondAttribute="trailing" id="dIe-5q-WuL"/>
+                            <constraint firstItem="N7B-Sj-mXx" firstAttribute="centerX" secondItem="cYy-Wn-Igc" secondAttribute="centerX" id="f3A-zE-sLQ"/>
+                            <constraint firstItem="yGY-ce-hzG" firstAttribute="centerX" secondItem="dNf-sQ-9il" secondAttribute="centerX" id="fYv-2h-yTk"/>
+                            <constraint firstItem="zaT-6k-YIk" firstAttribute="bottom" secondItem="w2e-st-Fjb" secondAttribute="bottom" id="hNa-dM-Grc"/>
+                            <constraint firstItem="cYy-Wn-Igc" firstAttribute="leading" secondItem="CD6-Ee-Uc5" secondAttribute="leading" id="hT6-4W-jr1"/>
+                            <constraint firstItem="N7B-Sj-mXx" firstAttribute="leading" secondItem="w2e-st-Fjb" secondAttribute="leading" id="ja8-6X-Mi8"/>
+                            <constraint firstItem="FgQ-1E-pd2" firstAttribute="centerX" secondItem="zaT-6k-YIk" secondAttribute="centerX" id="lNf-fe-ahi"/>
+                            <constraint firstItem="Hjf-1V-6lm" firstAttribute="top" secondItem="w2e-st-Fjb" secondAttribute="top" constant="4" id="os6-jm-09I"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="txr-d8-ibS" secondAttribute="bottom" constant="-18" id="qfN-kr-q4Z"/>
+                            <constraint firstItem="dNf-sQ-9il" firstAttribute="leading" secondItem="cYy-Wn-Igc" secondAttribute="leading" id="tmo-dD-tsi"/>
+                            <constraint firstItem="CD6-Ee-Uc5" firstAttribute="top" secondItem="cYy-Wn-Igc" secondAttribute="bottom" constant="26" id="twA-uh-1bK"/>
+                            <constraint firstItem="yGY-ce-hzG" firstAttribute="top" secondItem="w2e-st-Fjb" secondAttribute="top" constant="6" id="uNi-dx-Mq2"/>
+                            <constraint firstItem="CD6-Ee-Uc5" firstAttribute="leading" secondItem="txr-d8-ibS" secondAttribute="leading" id="wyX-yE-JbK"/>
+                            <constraint firstItem="dNf-sQ-9il" firstAttribute="leading" secondItem="w2e-st-Fjb" secondAttribute="leading" constant="24" id="x6j-KC-Tn0"/>
+                            <constraint firstItem="Hjf-1V-6lm" firstAttribute="centerY" secondItem="yGY-ce-hzG" secondAttribute="centerY" id="zrm-zA-52i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OHL-DE-G5O"/>
+                    <connections>
+                        <segue destination="fmg-VF-FjA" kind="showDetail" identifier="HistoryToHome" animates="NO" id="wlG-1m-kki"/>
+                        <segue destination="N0t-k1-ayj" kind="showDetail" identifier="HistoryToMyPlant" animates="NO" id="R2v-zA-nfw"/>
+                        <segue destination="0yG-Y9-lC1" kind="showDetail" identifier="HistoryToFind" animates="NO" id="gID-6x-QRU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1B1-jS-Lu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="745"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Tps-4v-zbx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="JBn-hK-Go7" userLabel="Result View Controller" customClass="ResultViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WiJ-xX-NZq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l8K-Y3-kvn">
+                                <rect key="frame" x="33" y="473" width="325" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6d-Fx-0FU">
+                                <rect key="frame" x="33" y="234" width="325" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vd0-aE-iPI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckh-TD-Fdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="48.883928571428569"/>
+            <point key="canvasLocation" x="3501.5384615384614" y="-36.255924170616112"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qqf-1p-TxD"/>
+        <segue reference="aZK-yy-IeQ"/>
+        <segue reference="ZMi-Em-saq"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
+        <image name="a 3" width="79" height="78"/>
+        <image name="back" width="390" height="844"/>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="bottom" width="505" height="94"/>
+        <image name="camera.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="chevron.left.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="leaf.fill" catalog="system" width="128" height="109"/>
+        <image name="text.magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

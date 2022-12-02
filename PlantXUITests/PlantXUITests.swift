@@ -2,12 +2,12 @@
 //  PlantXUITests.swift
 //  PlantXUITests
 //
-//  Created by MacbookAir on 30.10.2022.
+//  Created by Rabia Abdioğlu on 30.11.2022.
 //
 
 import XCTest
 
-class PlantXUITests: XCTestCase {
+final class PlantXUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,7 +27,6 @@ class PlantXUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 

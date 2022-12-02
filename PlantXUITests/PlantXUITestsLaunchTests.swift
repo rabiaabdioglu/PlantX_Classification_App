@@ -2,12 +2,12 @@
 //  PlantXUITestsLaunchTests.swift
 //  PlantXUITests
 //
-//  Created by MacbookAir on 30.10.2022.
+//  Created by Rabia Abdioğlu on 30.11.2022.
 //
 
 import XCTest
 
-class PlantXUITestsLaunchTests: XCTestCase {
+final class PlantXUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
