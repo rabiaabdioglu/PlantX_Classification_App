@@ -7,47 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C301976294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30196C294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.swift */; };
-		5C301977294F6F7A00ED1472 /* GardenHeaderCollectionReusableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30196D294F6F7A00ED1472 /* GardenHeaderCollectionReusableViewViewModel.swift */; };
-		5C301978294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C30196E294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.xib */; };
-		5C301979294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301970294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.swift */; };
-		5C30197A294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C301971294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.xib */; };
-		5C30197B294F6F7A00ED1472 /* PlantDetailsCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301972294F6F7A00ED1472 /* PlantDetailsCollectionViewCellViewModel.swift */; };
-		5C30197C294F6F7A00ED1472 /* GardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301973294F6F7A00ED1472 /* GardenViewController.swift */; };
-		5C30197D294F6F7A00ED1472 /* GardenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C301974294F6F7A00ED1472 /* GardenViewController.xib */; };
-		5C30197E294F6F7A00ED1472 /* GardenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301975294F6F7A00ED1472 /* GardenViewModel.swift */; };
-		5C301980294F716200ED1472 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30197F294F716200ED1472 /* TabBarViewController.swift */; };
-		5C301985294F717B00ED1472 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C301982294F717B00ED1472 /* LoadingViewController.xib */; };
-		5C301986294F717B00ED1472 /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301983294F717B00ED1472 /* LoadingViewModel.swift */; };
-		5C301987294F717B00ED1472 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301984294F717B00ED1472 /* LoadingViewController.swift */; };
-		5C30198C294F719000ED1472 /* AddPlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301989294F719000ED1472 /* AddPlantViewModel.swift */; };
-		5C30198D294F719000ED1472 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30198A294F719000ED1472 /* AddPlantViewController.swift */; };
-		5C30198E294F719000ED1472 /* AddPlantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C30198B294F719000ED1472 /* AddPlantViewController.xib */; };
-		5C301993294F719D00ED1472 /* PlantDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301990294F719D00ED1472 /* PlantDetailsViewModel.swift */; };
-		5C301994294F719D00ED1472 /* PlantDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C301991294F719D00ED1472 /* PlantDetailsViewController.xib */; };
-		5C301995294F719D00ED1472 /* PlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301992294F719D00ED1472 /* PlantDetailsViewController.swift */; };
-		5C3019B5294F736E00ED1472 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C301998294F736E00ED1472 /* SeparatorView.swift */; };
-		5C3019B6294F736E00ED1472 /* SeparatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C301999294F736E00ED1472 /* SeparatorView.xib */; };
-		5C3019B7294F736E00ED1472 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C30199B294F736E00ED1472 /* ButtonView.xib */; };
-		5C3019B8294F736E00ED1472 /* ButtonViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30199C294F736E00ED1472 /* ButtonViewViewModel.swift */; };
-		5C3019B9294F736E00ED1472 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30199D294F736E00ED1472 /* ButtonView.swift */; };
-		5C3019BA294F736E00ED1472 /* CustomTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C30199F294F736E00ED1472 /* CustomTabBarView.xib */; };
-		5C3019BB294F736E00ED1472 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019A0294F736E00ED1472 /* CustomTabBarView.swift */; };
-		5C3019BC294F736E00ED1472 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019A2294F736E00ED1472 /* TextFieldView.swift */; };
-		5C3019BD294F736E00ED1472 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3019A3294F736E00ED1472 /* TextFieldView.xib */; };
-		5C3019BE294F736E00ED1472 /* TextFieldViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019A4294F736E00ED1472 /* TextFieldViewViewModel.swift */; };
-		5C3019BF294F736E00ED1472 /* QuickActionsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019A6294F736E00ED1472 /* QuickActionsViewViewModel.swift */; };
-		5C3019C0294F736E00ED1472 /* QuickActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019A7294F736E00ED1472 /* QuickActionsView.swift */; };
-		5C3019C1294F736E00ED1472 /* QuickActionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3019A8294F736E00ED1472 /* QuickActionsView.xib */; };
-		5C3019C2294F736E00ED1472 /* TextViewViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019AA294F736E00ED1472 /* TextViewViewViewModel.swift */; };
-		5C3019C3294F736E00ED1472 /* TextViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019AB294F736E00ED1472 /* TextViewView.swift */; };
-		5C3019C4294F736E00ED1472 /* TextViewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3019AC294F736E00ED1472 /* TextViewView.xib */; };
-		5C3019C5294F736E00ED1472 /* LabelViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019AE294F736E00ED1472 /* LabelViewViewModel.swift */; };
-		5C3019C6294F736E00ED1472 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3019AF294F736E00ED1472 /* LabelView.xib */; };
-		5C3019C7294F736E00ED1472 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019B0294F736E00ED1472 /* LabelView.swift */; };
-		5C3019C8294F736E00ED1472 /* DatePickerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019B2294F736E00ED1472 /* DatePickerViewViewModel.swift */; };
-		5C3019C9294F736E00ED1472 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019B3294F736E00ED1472 /* DatePickerView.swift */; };
-		5C3019CA294F736E00ED1472 /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3019B4294F736E00ED1472 /* DatePickerView.xib */; };
+		5C3019D4294F791300ED1472 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */; };
+		5C3D8B25294FA1C6009875BE /* FindViewController+CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */; };
+		5C3D8B27294FA220009875BE /* FindViewController+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */; };
+		5C3F8D25294FD29B000BF25C /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */; };
+		5C3F8D29294FD317000BF25C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D27294FD317000BF25C /* VNClassificationObservation+confidenceString.swift */; };
+		5C3F8D2A294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D28294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		5C3F8D2C294FD48D000BF25C /* AIVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D2B294FD48D000BF25C /* AIVision.swift */; };
 		5C592F102937CF7100D67289 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C592F0F2937CF7100D67289 /* HomeViewController.swift */; };
 		5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C592F112937D04200D67289 /* MyPlantsViewController.swift */; };
 		5C75059B293A8D1800569883 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75059A293A8D1800569883 /* LaunchViewController.swift */; };
@@ -83,47 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5C30196C294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
-		5C30196D294F6F7A00ED1472 /* GardenHeaderCollectionReusableViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenHeaderCollectionReusableViewViewModel.swift; sourceTree = "<group>"; };
-		5C30196E294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GardenHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
-		5C301970294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
-		5C301971294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlantDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
-		5C301972294F6F7A00ED1472 /* PlantDetailsCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailsCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
-		5C301973294F6F7A00ED1472 /* GardenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenViewController.swift; sourceTree = "<group>"; };
-		5C301974294F6F7A00ED1472 /* GardenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GardenViewController.xib; sourceTree = "<group>"; };
-		5C301975294F6F7A00ED1472 /* GardenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GardenViewModel.swift; sourceTree = "<group>"; };
-		5C30197F294F716200ED1472 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		5C301982294F717B00ED1472 /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
-		5C301983294F717B00ED1472 /* LoadingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
-		5C301984294F717B00ED1472 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		5C301989294F719000ED1472 /* AddPlantViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewModel.swift; sourceTree = "<group>"; };
-		5C30198A294F719000ED1472 /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
-		5C30198B294F719000ED1472 /* AddPlantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPlantViewController.xib; sourceTree = "<group>"; };
-		5C301990294F719D00ED1472 /* PlantDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewModel.swift; sourceTree = "<group>"; };
-		5C301991294F719D00ED1472 /* PlantDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlantDetailsViewController.xib; sourceTree = "<group>"; };
-		5C301992294F719D00ED1472 /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
-		5C301998294F736E00ED1472 /* SeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
-		5C301999294F736E00ED1472 /* SeparatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeparatorView.xib; sourceTree = "<group>"; };
-		5C30199B294F736E00ED1472 /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
-		5C30199C294F736E00ED1472 /* ButtonViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewViewModel.swift; sourceTree = "<group>"; };
-		5C30199D294F736E00ED1472 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		5C30199F294F736E00ED1472 /* CustomTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabBarView.xib; sourceTree = "<group>"; };
-		5C3019A0294F736E00ED1472 /* CustomTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
-		5C3019A2294F736E00ED1472 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
-		5C3019A3294F736E00ED1472 /* TextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
-		5C3019A4294F736E00ED1472 /* TextFieldViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewViewModel.swift; sourceTree = "<group>"; };
-		5C3019A6294F736E00ED1472 /* QuickActionsViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickActionsViewViewModel.swift; sourceTree = "<group>"; };
-		5C3019A7294F736E00ED1472 /* QuickActionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickActionsView.swift; sourceTree = "<group>"; };
-		5C3019A8294F736E00ED1472 /* QuickActionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuickActionsView.xib; sourceTree = "<group>"; };
-		5C3019AA294F736E00ED1472 /* TextViewViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewViewViewModel.swift; sourceTree = "<group>"; };
-		5C3019AB294F736E00ED1472 /* TextViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewView.swift; sourceTree = "<group>"; };
-		5C3019AC294F736E00ED1472 /* TextViewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewView.xib; sourceTree = "<group>"; };
-		5C3019AE294F736E00ED1472 /* LabelViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewViewModel.swift; sourceTree = "<group>"; };
-		5C3019AF294F736E00ED1472 /* LabelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
-		5C3019B0294F736E00ED1472 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
-		5C3019B2294F736E00ED1472 /* DatePickerViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewViewModel.swift; sourceTree = "<group>"; };
-		5C3019B3294F736E00ED1472 /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
-		5C3019B4294F736E00ED1472 /* DatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerView.xib; sourceTree = "<group>"; };
+		5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FindViewController+CameraPicker.swift"; sourceTree = "<group>"; };
+		5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FindViewController+PhotoPicker.swift"; sourceTree = "<group>"; };
+		5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		5C3F8D27294FD317000BF25C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
+		5C3F8D28294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		5C3F8D2B294FD48D000BF25C /* AIVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIVision.swift; sourceTree = "<group>"; };
 		5C592F0F2937CF7100D67289 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C592F112937D04200D67289 /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
 		5C75059A293A8D1800569883 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -141,8 +73,8 @@
 		5C8FA2672937AC80009CE9D7 /* PlantXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantXUITests.swift; sourceTree = "<group>"; };
 		5C8FA2692937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5CCE5C83293A5BEB006F0251 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
-		5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = SOURCE_ROOT; };
-		5CCE5C87293A5C11006F0251 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = SOURCE_ROOT; };
+		5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = PlantX/ViewControllers/HistoryViewController.swift; sourceTree = SOURCE_ROOT; };
+		5CCE5C87293A5C11006F0251 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = PlantX/ViewControllers/ResultViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,171 +102,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C301967294F6DCC00ED1472 /* Screens */ = {
+		5C3019D0294F749700ED1472 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5C30197F294F716200ED1472 /* TabBarViewController.swift */,
-				5C30198F294F719D00ED1472 /* PlantDetails */,
-				5C301988294F719000ED1472 /* AddPlant */,
-				5C301981294F717B00ED1472 /* Loading */,
-				5C30196A294F6F7A00ED1472 /* Garden */,
+				5C3F8D2B294FD48D000BF25C /* AIVision.swift */,
+				5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */,
+				5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */,
+				5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */,
+				5C592F112937D04200D67289 /* MyPlantsViewController.swift */,
+				5CCE5C83293A5BEB006F0251 /* FindViewController.swift */,
+				5CCE5C87293A5C11006F0251 /* ResultViewController.swift */,
+				5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */,
+				5C592F0F2937CF7100D67289 /* HomeViewController.swift */,
 			);
-			path = Screens;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		5C30196A294F6F7A00ED1472 /* Garden */ = {
+		5C3F8D26294FD317000BF25C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5C30196B294F6F7A00ED1472 /* GardenHeaderView */,
-				5C30196F294F6F7A00ED1472 /* PlantDetailsCell */,
-				5C301974294F6F7A00ED1472 /* GardenViewController.xib */,
-				5C301973294F6F7A00ED1472 /* GardenViewController.swift */,
-				5C301975294F6F7A00ED1472 /* GardenViewModel.swift */,
+				5C3F8D27294FD317000BF25C /* VNClassificationObservation+confidenceString.swift */,
+				5C3F8D28294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 			);
-			path = Garden;
-			sourceTree = "<group>";
-		};
-		5C30196B294F6F7A00ED1472 /* GardenHeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				5C30196C294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.swift */,
-				5C30196D294F6F7A00ED1472 /* GardenHeaderCollectionReusableViewViewModel.swift */,
-				5C30196E294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.xib */,
-			);
-			path = GardenHeaderView;
-			sourceTree = "<group>";
-		};
-		5C30196F294F6F7A00ED1472 /* PlantDetailsCell */ = {
-			isa = PBXGroup;
-			children = (
-				5C301970294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.swift */,
-				5C301971294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.xib */,
-				5C301972294F6F7A00ED1472 /* PlantDetailsCollectionViewCellViewModel.swift */,
-			);
-			path = PlantDetailsCell;
-			sourceTree = "<group>";
-		};
-		5C301981294F717B00ED1472 /* Loading */ = {
-			isa = PBXGroup;
-			children = (
-				5C301982294F717B00ED1472 /* LoadingViewController.xib */,
-				5C301983294F717B00ED1472 /* LoadingViewModel.swift */,
-				5C301984294F717B00ED1472 /* LoadingViewController.swift */,
-			);
-			path = Loading;
-			sourceTree = "<group>";
-		};
-		5C301988294F719000ED1472 /* AddPlant */ = {
-			isa = PBXGroup;
-			children = (
-				5C301989294F719000ED1472 /* AddPlantViewModel.swift */,
-				5C30198A294F719000ED1472 /* AddPlantViewController.swift */,
-				5C30198B294F719000ED1472 /* AddPlantViewController.xib */,
-			);
-			path = AddPlant;
-			sourceTree = "<group>";
-		};
-		5C30198F294F719D00ED1472 /* PlantDetails */ = {
-			isa = PBXGroup;
-			children = (
-				5C301990294F719D00ED1472 /* PlantDetailsViewModel.swift */,
-				5C301991294F719D00ED1472 /* PlantDetailsViewController.xib */,
-				5C301992294F719D00ED1472 /* PlantDetailsViewController.swift */,
-			);
-			path = PlantDetails;
-			sourceTree = "<group>";
-		};
-		5C301996294F736E00ED1472 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				5C301997294F736E00ED1472 /* SeparatorView */,
-				5C30199A294F736E00ED1472 /* ButtonView */,
-				5C30199E294F736E00ED1472 /* CustomTabBarView */,
-				5C3019A1294F736E00ED1472 /* TextFieldView */,
-				5C3019A5294F736E00ED1472 /* QuickActionsView */,
-				5C3019A9294F736E00ED1472 /* TextViewView */,
-				5C3019AD294F736E00ED1472 /* LabelView */,
-				5C3019B1294F736E00ED1472 /* DatePickerView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		5C301997294F736E00ED1472 /* SeparatorView */ = {
-			isa = PBXGroup;
-			children = (
-				5C301998294F736E00ED1472 /* SeparatorView.swift */,
-				5C301999294F736E00ED1472 /* SeparatorView.xib */,
-			);
-			path = SeparatorView;
-			sourceTree = "<group>";
-		};
-		5C30199A294F736E00ED1472 /* ButtonView */ = {
-			isa = PBXGroup;
-			children = (
-				5C30199B294F736E00ED1472 /* ButtonView.xib */,
-				5C30199C294F736E00ED1472 /* ButtonViewViewModel.swift */,
-				5C30199D294F736E00ED1472 /* ButtonView.swift */,
-			);
-			path = ButtonView;
-			sourceTree = "<group>";
-		};
-		5C30199E294F736E00ED1472 /* CustomTabBarView */ = {
-			isa = PBXGroup;
-			children = (
-				5C30199F294F736E00ED1472 /* CustomTabBarView.xib */,
-				5C3019A0294F736E00ED1472 /* CustomTabBarView.swift */,
-			);
-			path = CustomTabBarView;
-			sourceTree = "<group>";
-		};
-		5C3019A1294F736E00ED1472 /* TextFieldView */ = {
-			isa = PBXGroup;
-			children = (
-				5C3019A2294F736E00ED1472 /* TextFieldView.swift */,
-				5C3019A3294F736E00ED1472 /* TextFieldView.xib */,
-				5C3019A4294F736E00ED1472 /* TextFieldViewViewModel.swift */,
-			);
-			path = TextFieldView;
-			sourceTree = "<group>";
-		};
-		5C3019A5294F736E00ED1472 /* QuickActionsView */ = {
-			isa = PBXGroup;
-			children = (
-				5C3019A6294F736E00ED1472 /* QuickActionsViewViewModel.swift */,
-				5C3019A7294F736E00ED1472 /* QuickActionsView.swift */,
-				5C3019A8294F736E00ED1472 /* QuickActionsView.xib */,
-			);
-			path = QuickActionsView;
-			sourceTree = "<group>";
-		};
-		5C3019A9294F736E00ED1472 /* TextViewView */ = {
-			isa = PBXGroup;
-			children = (
-				5C3019AA294F736E00ED1472 /* TextViewViewViewModel.swift */,
-				5C3019AB294F736E00ED1472 /* TextViewView.swift */,
-				5C3019AC294F736E00ED1472 /* TextViewView.xib */,
-			);
-			path = TextViewView;
-			sourceTree = "<group>";
-		};
-		5C3019AD294F736E00ED1472 /* LabelView */ = {
-			isa = PBXGroup;
-			children = (
-				5C3019AE294F736E00ED1472 /* LabelViewViewModel.swift */,
-				5C3019AF294F736E00ED1472 /* LabelView.xib */,
-				5C3019B0294F736E00ED1472 /* LabelView.swift */,
-			);
-			path = LabelView;
-			sourceTree = "<group>";
-		};
-		5C3019B1294F736E00ED1472 /* DatePickerView */ = {
-			isa = PBXGroup;
-			children = (
-				5C3019B2294F736E00ED1472 /* DatePickerViewViewModel.swift */,
-				5C3019B3294F736E00ED1472 /* DatePickerView.swift */,
-				5C3019B4294F736E00ED1472 /* DatePickerView.xib */,
-			);
-			path = DatePickerView;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5C8FA2372937AC7E009CE9D7 = {
@@ -360,16 +150,12 @@
 		5C8FA2422937AC7E009CE9D7 /* PlantX */ = {
 			isa = PBXGroup;
 			children = (
-				5C301996294F736E00ED1472 /* Views */,
-				5C301967294F6DCC00ED1472 /* Screens */,
+				5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */,
+				5C3F8D26294FD317000BF25C /* Extensions */,
+				5C3019D0294F749700ED1472 /* ViewControllers */,
 				5C75059A293A8D1800569883 /* LaunchViewController.swift */,
 				5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */,
 				5C8FA2452937AC7E009CE9D7 /* SceneDelegate.swift */,
-				5C592F0F2937CF7100D67289 /* HomeViewController.swift */,
-				5C592F112937D04200D67289 /* MyPlantsViewController.swift */,
-				5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */,
-				5CCE5C87293A5C11006F0251 /* ResultViewController.swift */,
-				5CCE5C83293A5BEB006F0251 /* FindViewController.swift */,
 				5C8FA2492937AC7E009CE9D7 /* Main.storyboard */,
 				5C8FA24F2937AC7F009CE9D7 /* Assets.xcassets */,
 				5C8FA2512937AC7F009CE9D7 /* LaunchScreen.storyboard */,
@@ -500,23 +286,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C301985294F717B00ED1472 /* LoadingViewController.xib in Resources */,
 				5C8FA2532937AC7F009CE9D7 /* LaunchScreen.storyboard in Resources */,
-				5C30198E294F719000ED1472 /* AddPlantViewController.xib in Resources */,
-				5C3019CA294F736E00ED1472 /* DatePickerView.xib in Resources */,
-				5C30197A294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.xib in Resources */,
-				5C3019B6294F736E00ED1472 /* SeparatorView.xib in Resources */,
-				5C301994294F719D00ED1472 /* PlantDetailsViewController.xib in Resources */,
 				5C8FA2502937AC7F009CE9D7 /* Assets.xcassets in Resources */,
-				5C30197D294F6F7A00ED1472 /* GardenViewController.xib in Resources */,
 				5C8FA24B2937AC7E009CE9D7 /* Main.storyboard in Resources */,
-				5C3019C6294F736E00ED1472 /* LabelView.xib in Resources */,
-				5C3019C4294F736E00ED1472 /* TextViewView.xib in Resources */,
-				5C3019B7294F736E00ED1472 /* ButtonView.xib in Resources */,
-				5C3019C1294F736E00ED1472 /* QuickActionsView.xib in Resources */,
-				5C301978294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.xib in Resources */,
-				5C3019BA294F736E00ED1472 /* CustomTabBarView.xib in Resources */,
-				5C3019BD294F736E00ED1472 /* TextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,42 +313,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C301995294F719D00ED1472 /* PlantDetailsViewController.swift in Sources */,
-				5C301980294F716200ED1472 /* TabBarViewController.swift in Sources */,
-				5C3019B9294F736E00ED1472 /* ButtonView.swift in Sources */,
 				5C592F102937CF7100D67289 /* HomeViewController.swift in Sources */,
-				5C3019B5294F736E00ED1472 /* SeparatorView.swift in Sources */,
-				5C30197C294F6F7A00ED1472 /* GardenViewController.swift in Sources */,
 				5C8FA2442937AC7E009CE9D7 /* AppDelegate.swift in Sources */,
-				5C3019BE294F736E00ED1472 /* TextFieldViewViewModel.swift in Sources */,
-				5C3019C3294F736E00ED1472 /* TextViewView.swift in Sources */,
-				5C3019C7294F736E00ED1472 /* LabelView.swift in Sources */,
-				5C30198C294F719000ED1472 /* AddPlantViewModel.swift in Sources */,
-				5C3019C8294F736E00ED1472 /* DatePickerViewViewModel.swift in Sources */,
-				5C3019C5294F736E00ED1472 /* LabelViewViewModel.swift in Sources */,
-				5C3019BC294F736E00ED1472 /* TextFieldView.swift in Sources */,
-				5C3019B8294F736E00ED1472 /* ButtonViewViewModel.swift in Sources */,
-				5C3019BB294F736E00ED1472 /* CustomTabBarView.swift in Sources */,
+				5C3D8B27294FA220009875BE /* FindViewController+PhotoPicker.swift in Sources */,
+				5C3F8D29294FD317000BF25C /* VNClassificationObservation+confidenceString.swift in Sources */,
+				5C3F8D2A294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				5C8FA24E2937AC7E009CE9D7 /* PlantX.xcdatamodeld in Sources */,
-				5C301987294F717B00ED1472 /* LoadingViewController.swift in Sources */,
-				5C3019C2294F736E00ED1472 /* TextViewViewViewModel.swift in Sources */,
-				5C301976294F6F7A00ED1472 /* GardenHeaderCollectionReusableView.swift in Sources */,
+				5C3D8B25294FA1C6009875BE /* FindViewController+CameraPicker.swift in Sources */,
 				5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */,
-				5C30197E294F6F7A00ED1472 /* GardenViewModel.swift in Sources */,
-				5C30198D294F719000ED1472 /* AddPlantViewController.swift in Sources */,
+				5C3F8D25294FD29B000BF25C /* ImagePredictor.swift in Sources */,
 				5CCE5C84293A5BEB006F0251 /* FindViewController.swift in Sources */,
-				5C301986294F717B00ED1472 /* LoadingViewModel.swift in Sources */,
-				5C301977294F6F7A00ED1472 /* GardenHeaderCollectionReusableViewViewModel.swift in Sources */,
 				5C8FA2462937AC7E009CE9D7 /* SceneDelegate.swift in Sources */,
+				5C3F8D2C294FD48D000BF25C /* AIVision.swift in Sources */,
 				5CCE5C86293A5C02006F0251 /* HistoryViewController.swift in Sources */,
-				5C301993294F719D00ED1472 /* PlantDetailsViewModel.swift in Sources */,
-				5C3019C0294F736E00ED1472 /* QuickActionsView.swift in Sources */,
-				5C3019C9294F736E00ED1472 /* DatePickerView.swift in Sources */,
-				5C30197B294F6F7A00ED1472 /* PlantDetailsCollectionViewCellViewModel.swift in Sources */,
 				5C75059B293A8D1800569883 /* LaunchViewController.swift in Sources */,
-				5C3019BF294F736E00ED1472 /* QuickActionsViewViewModel.swift in Sources */,
+				5C3019D4294F791300ED1472 /* FlowerClassifier.mlmodel in Sources */,
 				5CCE5C88293A5C11006F0251 /* ResultViewController.swift in Sources */,
-				5C301979294F6F7A00ED1472 /* PlantDetailsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
