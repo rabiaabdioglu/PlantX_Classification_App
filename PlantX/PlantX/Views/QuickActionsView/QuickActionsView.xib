@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuickActionsView" customModule="Plantasia" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ynQ-bL-Zbw"/>
+                <outlet property="fertilizeView" destination="4iX-AR-uOt" id="TfN-Eh-uuO"/>
+                <outlet property="waterView" destination="a9n-4k-Dxp" id="Ikf-p9-bwd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ru8-pg-ikX">
+                    <rect key="frame" x="0.0" y="0.0" width="316" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xrH-M1-xnO">
+                            <rect key="frame" x="0.0" y="0.0" width="316" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9n-4k-Dxp">
+                                    <rect key="frame" x="0.0" y="0.0" width="148" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="qRC-3P-Pfa">
+                                            <rect key="frame" x="10" y="7" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="36" id="8Ic-q7-cSL"/>
+                                                <constraint firstAttribute="height" constant="36" id="jmz-9o-Lo0"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsf-sZ-kVN">
+                                            <rect key="frame" x="56" y="16" width="82" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="textColor" name="blue-69A8AD"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizingKey" value="water"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="148" id="6RM-Ji-tsn"/>
+                                        <constraint firstItem="hsf-sZ-kVN" firstAttribute="leading" secondItem="qRC-3P-Pfa" secondAttribute="trailing" constant="10" id="Br9-TC-OhT"/>
+                                        <constraint firstAttribute="trailing" secondItem="hsf-sZ-kVN" secondAttribute="trailing" constant="10" id="D3n-mE-f0O"/>
+                                        <constraint firstItem="qRC-3P-Pfa" firstAttribute="leading" secondItem="a9n-4k-Dxp" secondAttribute="leading" constant="10" id="HOv-D9-lGQ"/>
+                                        <constraint firstItem="qRC-3P-Pfa" firstAttribute="centerY" secondItem="a9n-4k-Dxp" secondAttribute="centerY" id="fb0-P3-UgK"/>
+                                        <constraint firstItem="hsf-sZ-kVN" firstAttribute="centerY" secondItem="a9n-4k-Dxp" secondAttribute="centerY" id="fyx-ts-fFi"/>
+                                        <constraint firstAttribute="height" constant="50" id="zpf-3E-Tb3"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iX-AR-uOt">
+                                    <rect key="frame" x="168" y="0.0" width="148" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fertilizer" translatesAutoresizingMaskIntoConstraints="NO" id="uiX-YL-xQz">
+                                            <rect key="frame" x="10" y="7" width="36" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="84x-gt-uez"/>
+                                                <constraint firstAttribute="width" constant="36" id="KQ9-Bl-6SW"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fertilize" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHF-ZY-FeT">
+                                            <rect key="frame" x="56" y="16" width="82" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="textColor" name="orange-FE865D"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizingKey" value="fertilize"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="uiX-YL-xQz" firstAttribute="centerY" secondItem="4iX-AR-uOt" secondAttribute="centerY" id="ONb-CJ-xgl"/>
+                                        <constraint firstItem="uiX-YL-xQz" firstAttribute="leading" secondItem="4iX-AR-uOt" secondAttribute="leading" constant="10" id="PBL-xT-trp"/>
+                                        <constraint firstItem="EHF-ZY-FeT" firstAttribute="leading" secondItem="uiX-YL-xQz" secondAttribute="trailing" constant="10" id="PmD-af-sOM"/>
+                                        <constraint firstAttribute="height" constant="50" id="QN4-Pi-dF0"/>
+                                        <constraint firstAttribute="width" constant="148" id="Yvl-v7-cnv"/>
+                                        <constraint firstAttribute="trailing" secondItem="EHF-ZY-FeT" secondAttribute="trailing" constant="10" id="eNg-Ge-htC"/>
+                                        <constraint firstItem="EHF-ZY-FeT" firstAttribute="centerY" secondItem="4iX-AR-uOt" secondAttribute="centerY" id="v3C-QQ-szr"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="xrH-M1-xnO" secondAttribute="bottom" id="eLz-fY-W9U"/>
+                        <constraint firstItem="xrH-M1-xnO" firstAttribute="leading" secondItem="ru8-pg-ikX" secondAttribute="leading" id="mbj-Hr-iTg"/>
+                        <constraint firstAttribute="trailing" secondItem="xrH-M1-xnO" secondAttribute="trailing" id="po8-gq-694"/>
+                        <constraint firstItem="xrH-M1-xnO" firstAttribute="top" secondItem="ru8-pg-ikX" secondAttribute="top" id="pvD-ZZ-V4g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ru8-pg-ikX" secondAttribute="trailing" id="MW7-HR-4e4"/>
+                <constraint firstAttribute="bottom" secondItem="ru8-pg-ikX" secondAttribute="bottom" id="O2f-h1-whw"/>
+                <constraint firstItem="ru8-pg-ikX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i0d-TM-qK5"/>
+                <constraint firstItem="ru8-pg-ikX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zwO-fj-alY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="251.14503816793894" y="185.91549295774649"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fertilizer" width="50" height="61.666667938232422"/>
+        <image name="water" width="33" height="49.666667938232422"/>
+        <namedColor name="blue-69A8AD">
+            <color red="0.41176470588235292" green="0.6588235294117647" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange-FE865D">
+            <color red="0.99607843137254903" green="0.52549019607843139" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

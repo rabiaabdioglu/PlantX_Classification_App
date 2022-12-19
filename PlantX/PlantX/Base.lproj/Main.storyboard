@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fmg-VF-FjA">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="mJG-Wb-2rs">
+            <objects>
+                <viewController storyboardIdentifier="HomeSB" wantsFullScreenLayout="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fmg-VF-FjA" customClass="HomeViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O6W-vU-ZsG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-Qg-lJL">
+                                <rect key="frame" x="1" y="-17" width="388" height="878"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="yQx-BU-AAF">
+                                <rect key="frame" x="24" y="324" width="342" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="pcr-sM-nLw"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Bitkilerim" imagePadding="110" cornerStyle="fixed">
+                                    <imageReference key="image" image="book.closed.fill" catalog="system" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.96078431372549022" alpha="0.18972485310349302" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="light"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToMyPlantWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="osU-sO-osh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="16° " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1h-fO-but">
+                                <rect key="frame" x="152" y="143" width="86" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kocaeli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTD-bb-eTI">
+                                <rect key="frame" x="158.66666666666666" y="222" width="73" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="6C1-bZ-GYy">
+                                <rect key="frame" x="24" y="429" width="152" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="Zfg-HD-WC8"/>
+                                    <constraint firstAttribute="height" constant="132" id="jaQ-tc-wrp"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Bul" imagePadding="9" cornerStyle="fixed">
+                                    <imageReference key="image" image="text.magnifyingglass" catalog="system" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" scale="default" weight="regular"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToFindWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="QdT-cx-gNw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Merhaba Rabia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOC-qX-mg0">
+                                <rect key="frame" x="164" y="82" width="127" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="tYj-fm-Lb8">
+                                <rect key="frame" x="214" y="429" width="152" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Geçmiş" imagePadding="9" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="light"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509804840000002" green="0.50196081400000003" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToHistoryWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="nQf-gq-WnB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-gc-SDf">
+                                <rect key="frame" x="148" y="614" width="83" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="FFt-LY-PtK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="camera.circle.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color systemColor="secondarySystemBackgroundColor"/>
+                                            <color systemColor="opaqueSeparatorColor"/>
+                                            <color red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HomeToFindWithPlants:" destination="fmg-VF-FjA" eventType="touchUpInside" id="P98-pW-Vcp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ODH-Uv-tuY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="7XC-Jo-dcN" kind="showDetail" identifier="HomeToHistory" animates="NO" id="uZG-7h-yA1"/>
+                        <segue destination="N0t-k1-ayj" kind="showDetail" identifier="HomeToMyPlant" animates="NO" id="aZK-yy-IeQ"/>
+                        <segue destination="0yG-Y9-lC1" kind="showDetail" identifier="HomeToFind" animates="NO" id="qqf-1p-TxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fy-TH-cYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972.46376811594212" y="-36.160714285714285"/>
+        </scene>
+        <!--BackHome-->
+        <scene sceneID="3FM-TC-TKy">
+            <objects>
+                <viewController storyboardIdentifier="MyPlantsSB" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" keyboardType="off" id="N0t-k1-ayj" customClass="MyPlantsViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="735-tZ-ET2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="L1v-hW-Vtb">
+                                <rect key="frame" x="0.0" y="-17" width="390" height="878"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                </preferredSymbolConfiguration>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="osr-YA-Fqu">
+                                <rect key="frame" x="-9" y="151" width="406" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="" imagePadding="110" cornerStyle="fixed">
+                                    <imageReference key="image" image="a 3" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="0.0" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fiidle-leaf fig" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0i-dQ-r4m">
+                                <rect key="frame" x="167" y="181" width="135" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Haftada 2 kez " textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-HH-1Xc">
+                                <rect key="frame" x="198" y="233" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="j1Y-fd-4ou">
+                                <rect key="frame" x="0.0" y="324" width="406" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="" imagePadding="110" cornerStyle="fixed">
+                                    <imageReference key="image" image="a 3" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fiidle-leaf fig" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLQ-dw-kvb">
+                                <rect key="frame" x="167" y="353" width="135" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-rz-CMF">
+                                <rect key="frame" x="0.0" y="504" width="406" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="MUI-ak-zoJ"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="" imagePadding="110" cornerStyle="fixed">
+                                    <imageReference key="image" image="a 3" symbolScale="large" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Haftada 2 kez " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsY-Rn-dod">
+                                <rect key="frame" x="198" y="405" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fiidle-leaf fig" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZc-Jh-xPa">
+                                <rect key="frame" x="167" y="533" width="135" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Haftada 2 kez " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM3-wJ-xaq">
+                                <rect key="frame" x="198" y="585" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYF-Ss-whJ">
+                                <rect key="frame" x="16" y="47" width="60" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical" variableValue="0.0">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemGray5Color"/>
+                                            <color white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="medium" weight="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="MyPlantToHomeWithPlants:" destination="N0t-k1-ayj" eventType="touchUpInside" id="JNa-OV-QqH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitkilerim" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hti-2t-RkL">
+                                <rect key="frame" x="90" y="52" width="210" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="27"/>
+                                <color key="textColor" red="0.27450980390000002" green="0.40000000000000002" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HaC-BL-qa3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="BackHome" id="plj-WO-dBT"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="fmg-VF-FjA" kind="showDetail" identifier="MyPlantToHome" animates="NO" id="ZMi-Em-saq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LCg-9X-1aC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746.1538461538462" y="-36.96682464454976"/>
+        </scene>
+        <!--Find View Controller-->
+        <scene sceneID="e9w-A4-xIY">
+            <objects>
+                <viewController storyboardIdentifier="FindSB" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0yG-Y9-lC1" userLabel="Find View Controller" customClass="FindViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZP5-xB-8Et">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-sY-IWs">
+                                <rect key="frame" x="0.0" y="14" width="390" height="816"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FVi-0O-3U1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3We-Hq-qsz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3p-HM-0VQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="-36.255924170616112"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="n7A-Sq-lzT">
+            <objects>
+                <viewController storyboardIdentifier="HistorySB" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7XC-Jo-dcN" userLabel="History View Controller" customClass="HistoryViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hRK-5b-Rz9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleToFill" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="N7B-Sj-mXx">
+                                <rect key="frame" x="0.0" y="-17" width="390" height="878"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="dNf-sQ-9il">
+                                <rect key="frame" x="24" y="140" width="342" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="pY5-hc-xaD"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Fiddle.." imagePadding="0.0" cornerStyle="fixed">
+                                    <imageReference key="image" image="ellipsis" catalog="system" symbolScale="small" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="cYy-Wn-Igc">
+                                <rect key="frame" x="24" y="233" width="342" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Y0o-n3-odr"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Fiddle.." imagePadding="0.0" cornerStyle="fixed">
+                                    <imageReference key="image" image="ellipsis" catalog="system" symbolScale="small" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-Ee-Uc5">
+                                <rect key="frame" x="24" y="336" width="342" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="LHb-Ph-yZ4"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Fiddle.." imagePadding="0.0" cornerStyle="fixed">
+                                    <imageReference key="image" image="ellipsis" catalog="system" symbolScale="small" renderingMode="hierarchical-single" variableValue="1">
+                                        <hierarchicalColors>
+                                            <color red="0.34509803921568627" green="0.50196078431372548" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="1">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font" weight="light">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="30" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="0.34509803919999998" green="0.50196078430000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjf-1V-6lm">
+                                <rect key="frame" x="16" y="51" width="59" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <imageReference key="image" image="chevron.left.circle.fill" catalog="system" symbolScale="large" renderingMode="hierarchical" variableValue="0.0">
+                                        <hierarchicalColors>
+                                            <color systemColor="systemGray5Color"/>
+                                            <color white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" scale="medium" weight="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HistoryToHomeWithPlants:" destination="7XC-Jo-dcN" eventType="touchUpInside" id="cZh-ED-Owj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Geçmiş" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-ce-hzG">
+                                <rect key="frame" x="150.66666666666666" y="53" width="89" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.27450980390000002" green="0.40000000000000002" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w2e-st-Fjb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OHL-DE-G5O"/>
+                    <connections>
+                        <segue destination="fmg-VF-FjA" kind="showDetail" identifier="HistoryToHome" animates="NO" id="wlG-1m-kki"/>
+                        <segue destination="N0t-k1-ayj" kind="showDetail" identifier="HistoryToMyPlant" animates="NO" id="R2v-zA-nfw"/>
+                        <segue destination="0yG-Y9-lC1" kind="showDetail" identifier="HistoryToFind" animates="NO" id="gID-6x-QRU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1B1-jS-Lu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="745"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Tps-4v-zbx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="JBn-hK-Go7" userLabel="Result View Controller" customClass="ResultViewController" customModule="PlantX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WiJ-xX-NZq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="DDO-5f-Jga">
+                                <rect key="frame" x="-1" y="0.0" width="390.33333333333303" height="878"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                </preferredSymbolConfiguration>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8K-Y3-kvn">
+                                <rect key="frame" x="33" y="473" width="325" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6d-Fx-0FU">
+                                <rect key="frame" x="33" y="234" width="325" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vd0-aE-iPI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckh-TD-Fdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3501.5384615384614" y="-36.255924170616112"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qqf-1p-TxD"/>
+        <segue reference="aZK-yy-IeQ"/>
+        <segue reference="ZMi-Em-saq"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="a 3" width="79" height="78"/>
+        <image name="back" width="390" height="844"/>
+        <image name="book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="camera.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="chevron.left.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="text.magnifyingglass" catalog="system" width="128" height="117"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
