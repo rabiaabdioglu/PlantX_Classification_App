@@ -15,32 +15,46 @@ class FindViewController: UIViewController {
     @IBOutlet weak var predictionLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var startupPrompts: UIStackView!
+    var getImage :UIImage?
+    var plantName = "BitkiAdı"
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
   
     }
-    @IBAction func dismissBtnPressed() {
-           dismiss(animated: true) {
-           }
-       }
+   
     
     
+// Segue ile veri aktarma
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "FindToResult" {
+            
+            if let resultLabel = segue.destination as? ResultViewController { // 1
+                
+                let plantInfo = self.plantName.components(separatedBy: "-")
+                resultLabel.plantInfo.name = plantInfo[0]
+                resultLabel.plantInfo.percent = plantInfo[1]
+                resultLabel.ResultImage?.image = imageView?.image
+            }
+        }}
+    
+// segue işlemleri
     @IBAction func FindToResult(plants button : UIButton){
         
         performSegue(withIdentifier: "FindToResult", sender: self)
         
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "FindToResult" {
-            
-            if let resultLabel = segue.destination as? ResultViewController { // 1
-                resultLabel.user = predictionLabel.text!
-            }
-        }}
+    @IBAction func dismissBtnPressed() {
+        dismiss(animated: true) {
+        }
+    }
 }
 
+
+// kullanıcı seçim sorgulama
  extension FindViewController {
       
      @IBAction func isCapture() {
@@ -55,52 +69,44 @@ class FindViewController: UIViewController {
        
 
         }
-
-
-
 }
 
+
+// MARK: Görüntü alma ve güncelleme
 extension FindViewController {
   
-    /// - Parameter image: An image.
-    func updateImage(_ image: UIImage) {
+    /// - Görüntü alma veya seçme
+ func updateImage(_ image: UIImage) {
         DispatchQueue.main.async {
             self.imageView.image = image
+            
         }
     }
 
-   
-    func updatePredictionLabel(_ message: String) {
-        
-        
-        
-        DispatchQueue.main.async {
-            self.predictionLabel.text = message
-           
-        }
-          }
-
- 
     func userSelectedPhoto(_ photo: UIImage) {
         updateImage(photo)
         updatePredictionLabel("Making predictions for the photo...")
 
         DispatchQueue.global(qos: .userInitiated).async {
+        self.classifyImage(photo)
             
-            self.classifyImage(photo)
         }
     }
 
-    
-    
-   
+    // bitki adı label güncelleme
+     func updatePredictionLabel(_ message: String) {
+         DispatchQueue.main.async {
+             self.predictionLabel.text = message
+             self.plantName = message
+         }}
+
 }
 
 
+// MARK: Görüntü sınıflandırma ve label alma işlemleri
+
 extension FindViewController {
-    // MARK: Image prediction methods
-    /// Sends a photo to the Image Predictor to get a prediction of its content.
-    /// - Parameter image: A photo.
+    
     private func classifyImage(_ image: UIImage) {
         do {
             try self.imagePredictor.makePredictions(for: image,
@@ -108,36 +114,31 @@ extension FindViewController {
         } catch {
             print("Vision was unable to make a prediction...\n\n\(error.localizedDescription)")
         }
+        
     }
-
-    /// The method the Image Predictor calls when its image classifier model generates a prediction.
-    /// - Parameter predictions: An array of predictions.
-    /// - Tag: imagePredictionHandler
+    
     private func imagePredictionHandler(_ predictions: [ImagePredictor.Prediction]?) {
         guard let predictions = predictions else {
             updatePredictionLabel("No predictions. (Check console log.)")
             return
         }
-
         let formattedPredictions = formatPredictions(predictions)
-
         let predictionString = formattedPredictions.joined(separator: "\n")
         updatePredictionLabel(predictionString)
+  
+        
     }
 
-    /// Converts a prediction's observations into human-readable strings.
-    /// - Parameter observations: The classification observations from a Vision request.
-    /// - Tag: formatPredictions
+
+    // Bitki adı ve yüzdelik oranları alma
+
     private func formatPredictions(_ predictions: [ImagePredictor.Prediction]) -> [String] {
         // Vision sorts the classifications in descending confidence order.
         let topPredictions: [String] = predictions.prefix(predictionsToShow).map { prediction in
             var name = prediction.classification
-
             // For classifications with more than one name, keep the one before the first comma.
             if let firstComma = name.firstIndex(of: ",") {
-                name = String(name.prefix(upTo: firstComma))
-            }
-
+                name = String(name.prefix(upTo: firstComma))  }
             return "\(name) - \(prediction.confidencePercentage)%"
         }
 

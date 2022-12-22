@@ -1,14 +1,13 @@
-/*
-See LICENSE folder for this sample’s licensing information.
+//  PlantX
+//
+//  Created by Rabia Abdioğlu on 30.11.2022.
+//
 
-Abstract:
-Vision extension that adds a `confidencePercentageString` property to VNClassificationObservation instances.
-*/
 
 import Vision
 
 extension VNClassificationObservation {
-    /// Generates a string of the observation's confidence as a percentage.
+    /// Yüzdelik ayarlama
     var confidencePercentageString: String {
         let percentage = confidence * 100
 

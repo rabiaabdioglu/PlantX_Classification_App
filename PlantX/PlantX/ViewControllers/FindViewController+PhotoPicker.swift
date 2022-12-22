@@ -2,7 +2,7 @@
 import PhotosUI
 
 extension FindViewController: PHPickerViewControllerDelegate {
-    /// Creates a controller that gives the user a view they can use to select a photo from the device's library.
+//Galeriden fotoğraf seçimi
     var photoPicker: PHPickerViewController {
         var config = PHPickerConfiguration()
         config.selectionLimit = 1
@@ -14,10 +14,7 @@ extension FindViewController: PHPickerViewControllerDelegate {
         return photoPicker
     }
 
-    /// The delegate method UIKit calls when the user selects a photo from the library.
-    /// - Parameters:
-    ///   - picker: A picker controller the `photoPicker` property created.
-    ///   - results: An array of results. The method presumes the first result contains a photo.
+
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         picker.dismiss(animated: false)
 

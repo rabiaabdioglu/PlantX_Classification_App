@@ -2,7 +2,7 @@
 import UIKit
 
 extension FindViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    /// Creates a controller that gives the user a view they can use to take a photo with the device's camera.
+    /// Kameradan görüntü alma
     var cameraPicker: UIImagePickerController {
         let cameraPicker = UIImagePickerController()
         cameraPicker.delegate = self
@@ -10,10 +10,7 @@ extension FindViewController: UIImagePickerControllerDelegate, UINavigationContr
         return cameraPicker
     }
 
-    /// The delegate method UIKit calls when the user takes a photo with the camera.
-    /// - Parameters:
-    ///   - picker: A picker controller the `cameraPicker` property created.
-    ///   - info: A dictionary that contains the photo.
+
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         picker.dismiss(animated: false)

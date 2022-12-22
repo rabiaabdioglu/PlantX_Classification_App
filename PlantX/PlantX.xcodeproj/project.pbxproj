@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C13F0392952825200981AC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C13F0382952825200981AC9 /* CoreLocation.framework */; };
 		5C3019D4294F791300ED1472 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */; };
+		5C345C1D2953BCD70069491F /* SavedPlantData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C345C1B2953BCD70069491F /* SavedPlantData+CoreDataClass.swift */; };
+		5C345C1E2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C345C1C2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift */; };
+		5C345C202953BE040069491F /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C345C1F2953BE040069491F /* CoreDataHandler.swift */; };
 		5C3D8B25294FA1C6009875BE /* FindViewController+CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */; };
 		5C3D8B27294FA220009875BE /* FindViewController+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */; };
 		5C3F8D25294FD29B000BF25C /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */; };
@@ -16,6 +20,7 @@
 		5C3F8D2C294FD48D000BF25C /* AIVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D2B294FD48D000BF25C /* AIVision.swift */; };
 		5C592F102937CF7100D67289 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C592F0F2937CF7100D67289 /* HomeViewController.swift */; };
 		5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C592F112937D04200D67289 /* MyPlantsViewController.swift */; };
+		5C6612072951CA9F003E0E1A /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6612062951CA9F003E0E1A /* WikipediaKit */; };
 		5C75059B293A8D1800569883 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75059A293A8D1800569883 /* LaunchViewController.swift */; };
 		5C8FA2442937AC7E009CE9D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */; };
 		5C8FA2462937AC7E009CE9D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2452937AC7E009CE9D7 /* SceneDelegate.swift */; };
@@ -49,7 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C13F0382952825200981AC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		5C345C1B2953BCD70069491F /* SavedPlantData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedPlantData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C345C1C2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedPlantData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5C345C1F2953BE040069491F /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
 		5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FindViewController+CameraPicker.swift"; sourceTree = "<group>"; };
 		5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FindViewController+PhotoPicker.swift"; sourceTree = "<group>"; };
 		5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
@@ -82,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C13F0392952825200981AC9 /* CoreLocation.framework in Frameworks */,
+				5C6612072951CA9F003E0E1A /* WikipediaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,9 +113,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C13F0372952825200981AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C13F0382952825200981AC9 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5C3019D0294F749700ED1472 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5C345C1F2953BE040069491F /* CoreDataHandler.swift */,
 				5C3F8D2B294FD48D000BF25C /* AIVision.swift */,
 				5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */,
 				5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */,
@@ -134,6 +154,7 @@
 				5C8FA25C2937AC80009CE9D7 /* PlantXTests */,
 				5C8FA2662937AC80009CE9D7 /* PlantXUITests */,
 				5C8FA2412937AC7E009CE9D7 /* Products */,
+				5C13F0372952825200981AC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +171,11 @@
 		5C8FA2422937AC7E009CE9D7 /* PlantX */ = {
 			isa = PBXGroup;
 			children = (
-				5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */,
 				5C3F8D26294FD317000BF25C /* Extensions */,
 				5C3019D0294F749700ED1472 /* ViewControllers */,
+				5C345C1B2953BCD70069491F /* SavedPlantData+CoreDataClass.swift */,
+				5C345C1C2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift */,
+				5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */,
 				5C75059A293A8D1800569883 /* LaunchViewController.swift */,
 				5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */,
 				5C8FA2452937AC7E009CE9D7 /* SceneDelegate.swift */,
@@ -198,6 +221,9 @@
 			dependencies = (
 			);
 			name = PlantX;
+			packageProductDependencies = (
+				5C6612062951CA9F003E0E1A /* WikipediaKit */,
+			);
 			productName = PlantX;
 			productReference = 5C8FA2402937AC7E009CE9D7 /* PlantX.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +296,9 @@
 				Base,
 			);
 			mainGroup = 5C8FA2372937AC7E009CE9D7;
+			packageReferences = (
+				5C6612052951CA9F003E0E1A /* XCRemoteSwiftPackageReference "WikipediaKit" */,
+			);
 			productRefGroup = 5C8FA2412937AC7E009CE9D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,15 +349,18 @@
 				5C3F8D2A294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				5C8FA24E2937AC7E009CE9D7 /* PlantX.xcdatamodeld in Sources */,
 				5C3D8B25294FA1C6009875BE /* FindViewController+CameraPicker.swift in Sources */,
+				5C345C1D2953BCD70069491F /* SavedPlantData+CoreDataClass.swift in Sources */,
 				5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */,
 				5C3F8D25294FD29B000BF25C /* ImagePredictor.swift in Sources */,
 				5CCE5C84293A5BEB006F0251 /* FindViewController.swift in Sources */,
 				5C8FA2462937AC7E009CE9D7 /* SceneDelegate.swift in Sources */,
 				5C3F8D2C294FD48D000BF25C /* AIVision.swift in Sources */,
 				5CCE5C86293A5C02006F0251 /* HistoryViewController.swift in Sources */,
+				5C345C202953BE040069491F /* CoreDataHandler.swift in Sources */,
 				5C75059B293A8D1800569883 /* LaunchViewController.swift in Sources */,
 				5C3019D4294F791300ED1472 /* FlowerClassifier.mlmodel in Sources */,
 				5CCE5C88293A5C11006F0251 /* ResultViewController.swift in Sources */,
+				5C345C1E2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +540,8 @@
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlantX/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App need to location to serve better";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App need to location to serve better";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -535,11 +569,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlantX/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App need to location to serve better";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App need to location to serve better";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -553,6 +590,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RaSoft.PlantX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -678,6 +716,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C6612052951CA9F003E0E1A /* XCRemoteSwiftPackageReference "WikipediaKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Raureif/WikipediaKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C6612062951CA9F003E0E1A /* WikipediaKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C6612052951CA9F003E0E1A /* XCRemoteSwiftPackageReference "WikipediaKit" */;
+			productName = WikipediaKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5C8FA24C2937AC7E009CE9D7 /* PlantX.xcdatamodeld */ = {

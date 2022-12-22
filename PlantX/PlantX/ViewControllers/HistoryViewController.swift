@@ -14,6 +14,26 @@ class HistoryViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // Segue işlemleri
+
     @IBAction func HistoryToHome(plants button : UIButton){
         
         performSegue(withIdentifier: "HistoryToHome", sender: self)

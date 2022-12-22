@@ -1,11 +1,14 @@
-
+//  PlantX
+//
+//  Created by Rabia Abdioğlu on 20.12.2022.
+//
 
 import Vision
 import UIKit
 
 
 class ImagePredictor {
-    /// - Tag: name
+
     static func createImageClassifier() -> VNCoreMLModel {
         // Use a default model configuration.
         let defaultConfig = MLModelConfiguration()

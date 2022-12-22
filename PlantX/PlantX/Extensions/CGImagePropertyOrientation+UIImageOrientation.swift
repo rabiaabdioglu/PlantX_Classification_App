@@ -1,9 +1,7 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-Core Graphics utility extension that creates CGImagePropertyOrientation from a UIImage Orientation.
-*/
+//  PlantX
+//
+//  Created by Rabia Abdioğlu on 30.11.2022.
+//
 
 import UIKit
 import ImageIO
