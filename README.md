@@ -3,7 +3,7 @@
 Bu projede birden fazla model denenmiştir.
 PlantNet 300 k veri seti ile eğitilen modelde, validasyon değeri yüksek çıktı. Tam olarak doğru sonuçlar veremeyebiliyor.
 
-Youtube : 
+Youtube : https://www.youtube.com/watch?v=xlACRQ5wsac
 
 Figma   : https://www.figma.com/file/VGO1adrPSqYxe90HqE6KWe/PlantX?node-id=14%3A77&t=hHxSHuXM1E7Nlksv-1![image](https://user-images.githubusercontent.com/75799790/210010917-e2fd4614-aa86-419e-92b9-418fc1c9c8d8.png)
 
