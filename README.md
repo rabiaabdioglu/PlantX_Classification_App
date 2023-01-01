@@ -1,7 +1,7 @@
 # PlantX 
 
 Bu projede birden fazla model denenmiştir.
-PlantNet 300 k veri seti ile eğitilen modelde, validasyon değeri yüksek çıktı. Tam olarak doğru sonuçlar veremeyebiliyor.
+PlantNet 300 k veri seti ile eğitilen modelde, kayıp  değerleri yüksek çıktı. Tam olarak doğru sonuçlar veremeyebiliyor.
 
 Youtube : https://www.youtube.com/watch?v=xlACRQ5wsac
 
