@@ -35,9 +35,14 @@ class FindViewController: UIViewController {
             if let resultLabel = segue.destination as? ResultViewController { // 1
                 
                 let plantInfo = self.plantName.components(separatedBy: "-")
-                resultLabel.plantInfo.name = plantInfo[0]
-                resultLabel.plantInfo.percent = plantInfo[1]
-                resultLabel.ResultImage?.image = imageView?.image
+                do{ resultLabel.plantInfo.name = plantInfo[0]
+                    resultLabel.plantInfo.percent = plantInfo[1]
+                    resultLabel.ResultImage?.image = imageView?.image
+                    
+                }catch{
+                    print("Missing parameter.")
+
+                }
             }
         }}
     
@@ -79,7 +84,7 @@ extension FindViewController {
  func updateImage(_ image: UIImage) {
         DispatchQueue.main.async {
             self.imageView.image = image
-            
+
         }
     }
 
@@ -89,7 +94,7 @@ extension FindViewController {
 
         DispatchQueue.global(qos: .userInitiated).async {
         self.classifyImage(photo)
-            
+
         }
     }
 
@@ -114,15 +119,18 @@ extension FindViewController {
         } catch {
             print("Vision was unable to make a prediction...\n\n\(error.localizedDescription)")
         }
-        
+
     }
     
     private func imagePredictionHandler(_ predictions: [ImagePredictor.Prediction]?) {
-        guard let predictions = predictions else {
+     
+        
+        guard let prediction = predictions else {
             updatePredictionLabel("No predictions. (Check console log.)")
             return
         }
-        let formattedPredictions = formatPredictions(predictions)
+
+        let formattedPredictions = formatPredictions(prediction)
         let predictionString = formattedPredictions.joined(separator: "\n")
         updatePredictionLabel(predictionString)
   

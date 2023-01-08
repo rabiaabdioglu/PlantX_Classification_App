@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5C13F0392952825200981AC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C13F0382952825200981AC9 /* CoreLocation.framework */; };
-		5C3019D4294F791300ED1472 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */; };
 		5C345C1D2953BCD70069491F /* SavedPlantData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C345C1B2953BCD70069491F /* SavedPlantData+CoreDataClass.swift */; };
 		5C345C1E2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C345C1C2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift */; };
 		5C345C202953BE040069491F /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C345C1F2953BE040069491F /* CoreDataHandler.swift */; };
+		5C37D3FA295DB08C0011037B /* HistoryPlantData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37D3F8295DB08C0011037B /* HistoryPlantData+CoreDataClass.swift */; };
+		5C37D3FB295DB08C0011037B /* HistoryPlantData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37D3F9295DB08C0011037B /* HistoryPlantData+CoreDataProperties.swift */; };
 		5C3D8B25294FA1C6009875BE /* FindViewController+CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */; };
 		5C3D8B27294FA220009875BE /* FindViewController+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */; };
 		5C3F8D25294FD29B000BF25C /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */; };
@@ -20,6 +21,7 @@
 		5C3F8D2C294FD48D000BF25C /* AIVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D2B294FD48D000BF25C /* AIVision.swift */; };
 		5C592F102937CF7100D67289 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C592F0F2937CF7100D67289 /* HomeViewController.swift */; };
 		5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C592F112937D04200D67289 /* MyPlantsViewController.swift */; };
+		5C5EA888295D19A6008829D7 /* PlantX3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C5EA887295D19A6008829D7 /* PlantX3.mlmodel */; };
 		5C6612072951CA9F003E0E1A /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6612062951CA9F003E0E1A /* WikipediaKit */; };
 		5C75059B293A8D1800569883 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75059A293A8D1800569883 /* LaunchViewController.swift */; };
 		5C8FA2442937AC7E009CE9D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */; };
@@ -34,6 +36,7 @@
 		5CCE5C84293A5BEB006F0251 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C83293A5BEB006F0251 /* FindViewController.swift */; };
 		5CCE5C86293A5C02006F0251 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */; };
 		5CCE5C88293A5C11006F0251 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C87293A5C11006F0251 /* ResultViewController.swift */; };
+		5CF8D53C295672340023C62E /* label.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5CF8D53B295672340023C62E /* label.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +58,11 @@
 
 /* Begin PBXFileReference section */
 		5C13F0382952825200981AC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 		5C345C1B2953BCD70069491F /* SavedPlantData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedPlantData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5C345C1C2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedPlantData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5C345C1F2953BE040069491F /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		5C37D3F8295DB08C0011037B /* HistoryPlantData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryPlantData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5C37D3F9295DB08C0011037B /* HistoryPlantData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryPlantData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FindViewController+CameraPicker.swift"; sourceTree = "<group>"; };
 		5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FindViewController+PhotoPicker.swift"; sourceTree = "<group>"; };
 		5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 		5C3F8D2B294FD48D000BF25C /* AIVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIVision.swift; sourceTree = "<group>"; };
 		5C592F0F2937CF7100D67289 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C592F112937D04200D67289 /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
+		5C5EA887295D19A6008829D7 /* PlantX3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PlantX3.mlmodel; sourceTree = "<group>"; };
 		5C75059A293A8D1800569883 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C8FA2402937AC7E009CE9D7 /* PlantX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 		5CCE5C83293A5BEB006F0251 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = PlantX/ViewControllers/HistoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		5CCE5C87293A5C11006F0251 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = PlantX/ViewControllers/ResultViewController.swift; sourceTree = SOURCE_ROOT; };
+		5CF8D53B295672340023C62E /* label.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = label.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,18 +130,29 @@
 		5C3019D0294F749700ED1472 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5C345C1F2953BE040069491F /* CoreDataHandler.swift */,
 				5C3F8D2B294FD48D000BF25C /* AIVision.swift */,
 				5C3F8D24294FD29A000BF25C /* ImagePredictor.swift */,
 				5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */,
 				5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */,
-				5C592F112937D04200D67289 /* MyPlantsViewController.swift */,
 				5CCE5C83293A5BEB006F0251 /* FindViewController.swift */,
+				5C592F112937D04200D67289 /* MyPlantsViewController.swift */,
 				5CCE5C87293A5C11006F0251 /* ResultViewController.swift */,
 				5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */,
 				5C592F0F2937CF7100D67289 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5C37D3FC295DB0D50011037B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5C345C1F2953BE040069491F /* CoreDataHandler.swift */,
+				5C345C1B2953BCD70069491F /* SavedPlantData+CoreDataClass.swift */,
+				5C345C1C2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift */,
+				5C37D3F8295DB08C0011037B /* HistoryPlantData+CoreDataClass.swift */,
+				5C37D3F9295DB08C0011037B /* HistoryPlantData+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		5C3F8D26294FD317000BF25C /* Extensions */ = {
@@ -171,11 +188,10 @@
 		5C8FA2422937AC7E009CE9D7 /* PlantX */ = {
 			isa = PBXGroup;
 			children = (
+				5C37D3FC295DB0D50011037B /* CoreData */,
+				5CF8D534295668550023C62E /* Model */,
 				5C3F8D26294FD317000BF25C /* Extensions */,
 				5C3019D0294F749700ED1472 /* ViewControllers */,
-				5C345C1B2953BCD70069491F /* SavedPlantData+CoreDataClass.swift */,
-				5C345C1C2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift */,
-				5C3019D3294F791300ED1472 /* FlowerClassifier.mlmodel */,
 				5C75059A293A8D1800569883 /* LaunchViewController.swift */,
 				5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */,
 				5C8FA2452937AC7E009CE9D7 /* SceneDelegate.swift */,
@@ -203,6 +219,15 @@
 				5C8FA2692937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift */,
 			);
 			path = PlantXUITests;
+			sourceTree = "<group>";
+		};
+		5CF8D534295668550023C62E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CF8D53B295672340023C62E /* label.txt */,
+				5C5EA887295D19A6008829D7 /* PlantX3.mlmodel */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +343,7 @@
 				5C8FA2532937AC7F009CE9D7 /* LaunchScreen.storyboard in Resources */,
 				5C8FA2502937AC7F009CE9D7 /* Assets.xcassets in Resources */,
 				5C8FA24B2937AC7E009CE9D7 /* Main.storyboard in Resources */,
+				5CF8D53C295672340023C62E /* label.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +370,9 @@
 			files = (
 				5C592F102937CF7100D67289 /* HomeViewController.swift in Sources */,
 				5C8FA2442937AC7E009CE9D7 /* AppDelegate.swift in Sources */,
+				5C37D3FB295DB08C0011037B /* HistoryPlantData+CoreDataProperties.swift in Sources */,
 				5C3D8B27294FA220009875BE /* FindViewController+PhotoPicker.swift in Sources */,
+				5C5EA888295D19A6008829D7 /* PlantX3.mlmodel in Sources */,
 				5C3F8D29294FD317000BF25C /* VNClassificationObservation+confidenceString.swift in Sources */,
 				5C3F8D2A294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				5C8FA24E2937AC7E009CE9D7 /* PlantX.xcdatamodeld in Sources */,
@@ -358,8 +386,8 @@
 				5CCE5C86293A5C02006F0251 /* HistoryViewController.swift in Sources */,
 				5C345C202953BE040069491F /* CoreDataHandler.swift in Sources */,
 				5C75059B293A8D1800569883 /* LaunchViewController.swift in Sources */,
-				5C3019D4294F791300ED1472 /* FlowerClassifier.mlmodel in Sources */,
 				5CCE5C88293A5C11006F0251 /* ResultViewController.swift in Sources */,
+				5C37D3FA295DB08C0011037B /* HistoryPlantData+CoreDataClass.swift in Sources */,
 				5C345C1E2953BCD70069491F /* SavedPlantData+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -520,7 +548,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -535,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
@@ -545,9 +574,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,12 +584,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RaSoft.PlantX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -580,9 +610,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,7 +626,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -609,7 +639,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RaSoft.PlantXTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -629,7 +659,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RaSoft.PlantXTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -648,6 +678,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RaSoft.PlantXUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -666,6 +697,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RaSoft.PlantXUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

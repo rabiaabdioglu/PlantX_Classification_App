@@ -21,7 +21,7 @@ final class AIVision {
     private lazy var classificationRequest: VNCoreMLRequest = {
         do {
             // Ml model ekleme
-            let model = try VNCoreMLModel(for: FlowerClassifier().model)
+            let model = try VNCoreMLModel(for: PlantX3().model)
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
             })
@@ -37,19 +37,25 @@ final class AIVision {
 
     // Görsel etiketleme
     private lazy var labels : [String] = {
-        guard let path = Bundle.main.path(forResource: "labels", ofType: "txt"),
+        guard let path = Bundle.main.path(forResource: "label", ofType: "txt"),
             let content = try? String(contentsOfFile: path, encoding: .utf8) else {
-                assertionFailure("Parsing labels.txt error")
+                assertionFailure("Parsing label.txt error")
                 return [String]()
         }
+        
+        
+        
+        
         let lines = content.components(separatedBy: "\n")
         var array = [String]()
         for line in lines {
             let element = line.components(separatedBy: ":")
             if let value = element.last {
+       
                 array.append(value)
             }
         }
+        
         return array
     }()
     private var inference : ((String, Double) -> Void)? = nil
@@ -100,4 +106,8 @@ final class AIVision {
             }
         }
     }
+    
+    
+    
+    
 }

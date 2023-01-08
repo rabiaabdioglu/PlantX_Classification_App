@@ -87,6 +87,10 @@ extension HomeViewController
                 if let city = placeMark.addressDictionary?["City"] as? NSString
                 { self.cityNameLabel.text = city as String?
                 }
+                else
+                {
+                    print("Error : weather api")}
+                
                 
             }}
         
