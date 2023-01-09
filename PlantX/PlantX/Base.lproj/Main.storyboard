@@ -388,11 +388,11 @@
                                     <constraint firstItem="MrC-Hg-T02" firstAttribute="top" secondItem="DCL-O5-czp" secondAttribute="top" constant="4" id="vmk-9u-CTM"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myPlantTableView" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dJ7-GW-Stq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myPlantTableView" bounces="NO" contentInsetAdjustmentBehavior="scrollableAxes" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dJ7-GW-Stq">
                                 <rect key="frame" x="0.0" y="118" width="428" height="690"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" priority="250" constant="426" id="4tZ-PV-pjH"/>
+                                    <constraint firstAttribute="height" priority="250" constant="690" id="4tZ-PV-pjH"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="2j3-EV-9pH" rowHeight="96" style="IBUITableViewCellStyleDefault" id="gRa-qb-vEI">
@@ -419,13 +419,13 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpj-IV-35J" userLabel="tabbar">
-                                <rect key="frame" x="0.0" y="810" width="428" height="116"/>
+                                <rect key="frame" x="0.0" y="810" width="428" height="108"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="Subtract" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-XR-NNf">
-                                        <rect key="frame" x="0.0" y="8" width="428" height="108"/>
+                                        <rect key="frame" x="0.0" y="8" width="428" height="100"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWq-51-guG" userLabel="book">
-                                        <rect key="frame" x="285.33333333333331" y="19.666666666666629" width="142.66666666666669" height="81.333333333333329"/>
+                                        <rect key="frame" x="285.33333333333331" y="19.666666666666629" width="142.66666666666669" height="73.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
@@ -436,7 +436,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fe-qA-ccc" userLabel="camera">
-                                        <rect key="frame" x="142.66666666666669" y="19.666666666666629" width="142.66666666666669" height="81.333333333333329"/>
+                                        <rect key="frame" x="142.66666666666669" y="19.666666666666629" width="142.66666666666669" height="73.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="">
                                             <imageReference key="image" image="camera.circle.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
@@ -453,7 +453,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmT-dn-7xG" userLabel="home">
-                                        <rect key="frame" x="0.0" y="19.666666666666629" width="142.66666666666666" height="81.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="19.666666666666629" width="142.66666666666666" height="73.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="house" catalog="system" title="" imagePadding="0.0">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
@@ -469,12 +469,9 @@
                                     <constraint firstItem="0fe-qA-ccc" firstAttribute="width" secondItem="hmT-dn-7xG" secondAttribute="width" priority="750" id="9yl-96-FUy"/>
                                     <constraint firstAttribute="bottom" secondItem="UWq-51-guG" secondAttribute="bottom" constant="15" id="Cdw-Gf-j7V"/>
                                     <constraint firstItem="UWq-51-guG" firstAttribute="leading" secondItem="0fe-qA-ccc" secondAttribute="trailing" id="Egc-Ec-HAV"/>
-                                    <constraint firstItem="hmT-dn-7xG" firstAttribute="top" secondItem="bpj-IV-35J" secondAttribute="top" constant="19.5" id="Kv6-72-BEn"/>
                                     <constraint firstItem="UWq-51-guG" firstAttribute="height" secondItem="hmT-dn-7xG" secondAttribute="height" priority="750" id="RS3-cH-mqw"/>
-                                    <constraint firstItem="UWq-51-guG" firstAttribute="top" secondItem="bpj-IV-35J" secondAttribute="top" constant="19.5" id="TWd-hQ-6sU"/>
                                     <constraint firstAttribute="bottom" secondItem="0fe-qA-ccc" secondAttribute="bottom" constant="15" id="Udl-A0-BCA"/>
                                     <constraint firstAttribute="trailing" secondItem="UWq-51-guG" secondAttribute="trailing" id="X9a-ge-jE6"/>
-                                    <constraint firstItem="0fe-qA-ccc" firstAttribute="top" secondItem="bpj-IV-35J" secondAttribute="top" constant="19.5" id="Xz9-Vc-WoK"/>
                                     <constraint firstAttribute="bottom" secondItem="D9P-XR-NNf" secondAttribute="bottom" id="ZH7-T4-Cth"/>
                                     <constraint firstItem="hmT-dn-7xG" firstAttribute="leading" secondItem="bpj-IV-35J" secondAttribute="leading" id="bIC-4b-A6P"/>
                                     <constraint firstItem="D9P-XR-NNf" firstAttribute="top" secondItem="bpj-IV-35J" secondAttribute="top" priority="750" constant="8" id="hJB-BK-MEU"/>
@@ -497,7 +494,7 @@
                             <constraint firstItem="DCL-O5-czp" firstAttribute="top" secondItem="HaC-BL-qa3" secondAttribute="top" constant="10" id="WDQ-Kl-1qT"/>
                             <constraint firstItem="bpj-IV-35J" firstAttribute="centerX" secondItem="735-tZ-ET2" secondAttribute="centerX" id="ZyG-KM-XhW"/>
                             <constraint firstItem="DCL-O5-czp" firstAttribute="leading" secondItem="HaC-BL-qa3" secondAttribute="leading" constant="20" id="b6T-EN-ZTj"/>
-                            <constraint firstItem="bpj-IV-35J" firstAttribute="bottom" secondItem="735-tZ-ET2" secondAttribute="bottom" id="hck-Tv-wny"/>
+                            <constraint firstItem="bpj-IV-35J" firstAttribute="bottom" secondItem="735-tZ-ET2" secondAttribute="bottom" constant="-8" id="hck-Tv-wny"/>
                             <constraint firstItem="bpj-IV-35J" firstAttribute="leading" secondItem="HaC-BL-qa3" secondAttribute="leading" id="kEE-6K-5Uw"/>
                             <constraint firstItem="bpj-IV-35J" firstAttribute="trailing" secondItem="HaC-BL-qa3" secondAttribute="trailing" id="psj-X1-esa"/>
                             <constraint firstItem="dJ7-GW-Stq" firstAttribute="trailing" secondItem="HaC-BL-qa3" secondAttribute="trailing" id="rLe-3o-pcU"/>
@@ -507,6 +504,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4cQ-UB-R2v"/>
                     <connections>
+                        <outlet property="tableView" destination="dJ7-GW-Stq" id="X3D-Gn-U4u"/>
                         <segue destination="fmg-VF-FjA" kind="showDetail" identifier="MyPlantToHome" animates="NO" id="ZMi-Em-saq"/>
                         <segue destination="0yG-Y9-lC1" kind="show" identifier="MyPlantToFind" id="3s3-L8-3kj"/>
                         <segue destination="JBn-hK-Go7" kind="show" identifier="MyPlantsToResult" id="Gy0-dk-IeD"/>
@@ -528,13 +526,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUW-Hr-iuL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUW-Hr-iuL">
                                 <rect key="frame" x="20" y="691" width="388" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="hqv-iB-64D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.7254902124" green="0.7254902124" blue="0.7254902124" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmg-fF-HdL" userLabel="top">
@@ -706,7 +704,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txr-d8-ibS">
-                                        <rect key="frame" x="31.000000000000007" y="19.666666666666629" width="77.666666666666686" height="73.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="19.666666666666629" width="142.66666666666666" height="73.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="house" catalog="system" title="" imagePadding="0.0">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
@@ -717,7 +715,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b1-05-CMF">
-                                        <rect key="frame" x="310.33333333333331" y="19.666666666666629" width="77.666666666666686" height="73.333333333333329"/>
+                                        <rect key="frame" x="285.33333333333331" y="19.666666666666629" width="142.66666666666669" height="73.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
@@ -728,7 +726,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaT-6k-YIk">
-                                        <rect key="frame" x="170.66666666666666" y="19.666666666666629" width="77.666666666666657" height="73.333333333333329"/>
+                                        <rect key="frame" x="142.66666666666669" y="19.666666666666629" width="142.66666666666669" height="73.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="">
                                             <imageReference key="image" image="camera.circle.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
@@ -749,17 +747,17 @@
                                     <constraint firstItem="nWr-DD-KeV" firstAttribute="top" secondItem="g3z-fo-L0g" secondAttribute="topMargin" id="AGe-oP-8ge"/>
                                     <constraint firstItem="7b1-05-CMF" firstAttribute="height" secondItem="txr-d8-ibS" secondAttribute="height" priority="750" id="CEm-Xy-kFH"/>
                                     <constraint firstAttribute="bottom" secondItem="txr-d8-ibS" secondAttribute="bottom" priority="750" constant="15" id="HXj-MF-46F"/>
-                                    <constraint firstAttribute="trailing" secondItem="7b1-05-CMF" secondAttribute="trailing" priority="750" constant="40" id="Kjd-lU-TSC"/>
+                                    <constraint firstAttribute="trailing" secondItem="7b1-05-CMF" secondAttribute="trailing" priority="750" id="Kjd-lU-TSC"/>
                                     <constraint firstAttribute="trailing" secondItem="nWr-DD-KeV" secondAttribute="trailing" id="OaZ-kx-57X"/>
                                     <constraint firstAttribute="bottom" secondItem="zaT-6k-YIk" secondAttribute="bottom" priority="750" constant="15" id="PjK-Pz-J95"/>
                                     <constraint firstItem="nWr-DD-KeV" firstAttribute="leading" secondItem="g3z-fo-L0g" secondAttribute="leading" id="Q6w-us-Iha"/>
                                     <constraint firstItem="7b1-05-CMF" firstAttribute="width" secondItem="txr-d8-ibS" secondAttribute="width" priority="750" id="RNM-3u-7hg"/>
                                     <constraint firstItem="nWr-DD-KeV" firstAttribute="bottom" secondItem="g3z-fo-L0g" secondAttribute="bottom" id="TBf-fp-ad1"/>
-                                    <constraint firstItem="7b1-05-CMF" firstAttribute="leading" secondItem="zaT-6k-YIk" secondAttribute="trailing" priority="750" constant="62" id="aS4-1e-xlP"/>
+                                    <constraint firstItem="7b1-05-CMF" firstAttribute="leading" secondItem="zaT-6k-YIk" secondAttribute="trailing" priority="750" id="aS4-1e-xlP"/>
                                     <constraint firstItem="zaT-6k-YIk" firstAttribute="width" secondItem="txr-d8-ibS" secondAttribute="width" priority="750" id="fBS-Ze-9cx"/>
-                                    <constraint firstItem="zaT-6k-YIk" firstAttribute="leading" secondItem="txr-d8-ibS" secondAttribute="trailing" priority="750" constant="62" id="jcI-pz-dJW"/>
+                                    <constraint firstItem="zaT-6k-YIk" firstAttribute="leading" secondItem="txr-d8-ibS" secondAttribute="trailing" priority="750" id="jcI-pz-dJW"/>
                                     <constraint firstItem="zaT-6k-YIk" firstAttribute="height" secondItem="txr-d8-ibS" secondAttribute="height" priority="750" id="lh0-O5-o7w"/>
-                                    <constraint firstItem="txr-d8-ibS" firstAttribute="leading" secondItem="g3z-fo-L0g" secondAttribute="leading" priority="750" constant="31" id="pdB-j3-a2X"/>
+                                    <constraint firstItem="txr-d8-ibS" firstAttribute="leading" secondItem="g3z-fo-L0g" secondAttribute="leading" priority="750" id="pdB-j3-a2X"/>
                                     <constraint firstAttribute="bottom" secondItem="7b1-05-CMF" secondAttribute="bottom" priority="750" constant="15" id="y7a-22-KF0"/>
                                 </constraints>
                             </view>
@@ -805,6 +803,9 @@
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Geçmişi Temizle"/>
+                                <connections>
+                                    <action selector="deleteAllHistory:" destination="7XC-Jo-dcN" eventType="touchUpInside" id="5pY-gj-z17"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w2e-st-Fjb"/>
@@ -971,10 +972,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gy0-dk-IeD"/>
-        <segue reference="3s3-L8-3kj"/>
-        <segue reference="aZK-yy-IeQ"/>
-        <segue reference="ZMi-Em-saq"/>
+        <segue reference="P5S-2r-BaR"/>
+        <segue reference="gID-6x-QRU"/>
+        <segue reference="R2v-zA-nfw"/>
+        <segue reference="wlG-1m-kki"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Rectangle" width="392" height="139"/>

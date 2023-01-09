@@ -7,27 +7,61 @@
 
 import UIKit
 import WikipediaKit
+
+import CoreData
+
 class ResultViewController: UIViewController {
 
    
     @IBOutlet weak var predictionText: UITextView!
     @IBOutlet weak var ResultImage: UIImageView!
     @IBOutlet weak var predictionLabels: UILabel!
-    
     var plantText = "Yükleniyor..."
     var plantInfo = (name : "Bitki bulunamadı" , percent : "%..")
-    
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.predictionText.text  = plantText
         self.predictionLabels.text = plantInfo.name
-        
+     
         fetchDataWikipedia(element: plantInfo.name)
-       
+        addHistory()
+     
+        
         
     }
+
+    
+    
+    
+    func addHistory() {
+    
+   
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let context = appDelegate.persistentContainer.viewContext
+    
+    let plantData = NSEntityDescription.insertNewObject(forEntityName: "HistoryPlantData", into: context)
+  
+           do{
+                plantData.setValue(self.predictionLabels.text, forKey: "plantName")
+                plantData.setValue(UUID(), forKey: "plantId")
+
+                
+                
+                try context.save()
+                
+            }catch{print("Error has been occured during save data..")
+        }
+        
+    
+  
+    NotificationCenter.default.post(name: NSNotification.Name("newData"), object: nil)
+    self.navigationController?.popViewController(animated: true)
+    
+}
+    
     
     // Segue işlemleri
     @IBAction func dismissBtnPressed() {
@@ -38,18 +72,20 @@ class ResultViewController: UIViewController {
         
         performSegue(withIdentifier: "ResultToMyPlants", sender: self)  }
     
-// Segue ile veri aktarma
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ResultToMyPlants" {
-            
-            if let resultLabel = segue.destination as? MyPlantsViewController { // 1
-                resultLabel.plantName = predictionLabels.text!
-                resultLabel.imageView?.image = ResultImage?.image
-                resultLabel.isSaveButtonPressed = true
+    // Segue ile veri aktarma
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "ResultToMyPlants" {
+                
+                if let resultLabel = segue.destination as? MyPlantsViewController { // 1
+                    resultLabel.plantName = predictionLabels.text!
+                    resultLabel.imageView = ResultImage
+                    resultLabel.isSaveButtonPressed = true
+                }
             }
+            
         }
-        
-    }
+    
+    
     
     
 }

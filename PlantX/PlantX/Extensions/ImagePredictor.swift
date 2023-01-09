@@ -2,7 +2,6 @@
 //
 //  Created by Rabia Abdioğlu on 20.12.2022.
 //
-
 import Vision
 import UIKit
 
@@ -14,7 +13,7 @@ class ImagePredictor {
         let defaultConfig = MLModelConfiguration()
 
         // Create an instance of the image classifier's wrapper class.
-        let imageClassifierWrapper = try? FlowerClassifier(configuration: defaultConfig)
+        let imageClassifierWrapper = try? PlantX3(configuration: defaultConfig)
 
         guard let imageClassifier = imageClassifierWrapper else {
             fatalError("App failed to create an image classifier model instance.")
@@ -31,34 +30,21 @@ class ImagePredictor {
         return imageClassifierVisionModel
     }
 
-    /// A common image classifier instance that all Image Predictor instances use to generate predictions.
-    ///
-    /// Share one ``VNCoreMLModel`` instance --- for each Core ML model file --- across the app,
-    /// since each can be expensive in time and resources.
+
     private static let imageClassifier = createImageClassifier()
 
-    /// Stores a classification name and confidence for an image classifier's prediction.
-    /// - Tag: Prediction
     struct Prediction {
-        /// The name of the object or scene the image classifier recognizes in an image.
         let classification: String
 
-        /// The image classifier's confidence as a percentage string.
-        ///
-        /// The prediction string doesn't include the % symbol in the string.
         let confidencePercentage: String
     }
 
-    /// The function signature the caller must provide as a completion handler.
     typealias ImagePredictionHandler = (_ predictions: [Prediction]?) -> Void
 
-    /// A dictionary of prediction handler functions, each keyed by its Vision request.
     private var predictionHandlers = [VNRequest: ImagePredictionHandler]()
 
-    /// Generates a new request instance that uses the Image Predictor's image classifier model.
     private func createImageClassificationRequest() -> VNImageBasedRequest {
         // Create an image classification request with an image classifier model.
-
         let imageClassificationRequest = VNCoreMLRequest(model: ImagePredictor.imageClassifier,
                                                          completionHandler: visionRequestHandler)
 
@@ -86,13 +72,7 @@ class ImagePredictor {
         try handler.perform(requests)
     }
 
-    /// The completion handler method that Vision calls when it completes a request.
-    /// - Parameters:
-    ///   - request: A Vision request.
-    ///   - error: An error if the request produced an error; otherwise `nil`.
-    ///
-    ///   The method checks for errors and validates the request's results.
-    /// - Tag: visionRequestHandler
+  
     private func visionRequestHandler(_ request: VNRequest, error: Error?) {
         // Remove the caller's handler from the dictionary and keep a reference to it.
         guard let predictionHandler = predictionHandlers.removeValue(forKey: request) else {

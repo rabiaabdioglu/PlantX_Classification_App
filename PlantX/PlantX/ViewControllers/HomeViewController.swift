@@ -84,19 +84,26 @@ extension HomeViewController
                 placeMark = placeArray?[0]
                 
                 // İlçe adı
-                if let city = placeMark.addressDictionary?["City"] as? NSString
-                { self.cityNameLabel.text = city as String?
+                if placeMark != nil{
+                    if let city = placeMark.addressDictionary?["City"] as? NSString
+                    { self.cityNameLabel.text = city as String?
+                    }
+                    else
+                    {
+                        print("Error : Weather api")}
+                    
                 }
-                else
-                {
-                    print("Error : weather api")}
+                else{print("Placemark is nil")}
                 
                 
             }}
         
         else {
             print("Error : Cant get location")
-        }}
+        }
+        
+        
+    }
 
     
     func getWeather(){
