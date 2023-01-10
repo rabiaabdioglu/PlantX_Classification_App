@@ -89,7 +89,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="yQx-BU-AAF">
                                         <rect key="frame" x="56" y="0.0" width="327.66666666666669" height="80"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="Bitkilerim" imagePadding="13" cornerStyle="fixed" buttonSize="large">
+                                        <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="My Plants" imagePadding="13" cornerStyle="fixed" buttonSize="large">
                                             <backgroundConfiguration key="background" cornerRadius="20" strokeWidth="1" strokeOutset="1">
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="strokeColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.96078431372549022" alpha="0.18972485310349302" colorSpace="custom" customColorSpace="sRGB"/>
@@ -109,7 +109,7 @@
                                             <constraint firstAttribute="width" priority="750" constant="123.5" id="7UQ-9Y-QYu"/>
                                             <constraint firstAttribute="height" priority="750" constant="100" id="ewR-ab-dcQ"/>
                                         </constraints>
-                                        <buttonConfiguration key="configuration" style="plain" image="leaf" catalog="system" imagePlacement="top" title="Geçmiş" imagePadding="8" cornerStyle="fixed" buttonSize="large">
+                                        <buttonConfiguration key="configuration" style="plain" image="leaf" catalog="system" imagePlacement="top" title="History" imagePadding="8" cornerStyle="fixed" buttonSize="large">
                                             <backgroundConfiguration key="background" cornerRadius="20" strokeWidth="1" strokeOutset="1">
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -125,7 +125,7 @@
                                     </button>
                                     <button verifyAmbiguity="off" opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="tailTruncation" preferredBehavioralStyle="mac" translatesAutoresizingMaskIntoConstraints="NO" id="6C1-bZ-GYy">
                                         <rect key="frame" x="55.999999999999986" y="102" width="149.66666666666663" height="100"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" imagePlacement="top" title="Bul" imagePadding="9" cornerStyle="fixed" buttonSize="large">
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" imagePlacement="top" title="Find" imagePadding="9" cornerStyle="fixed" buttonSize="large">
                                             <backgroundConfiguration key="background" cornerRadius="20" strokeWidth="1" strokeOutset="1">
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="strokeColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.96078431369999995" alpha="0.18972485310000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -224,7 +224,7 @@
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" misplaced="YES" text="Nem " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uO-Ch-Yq1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" misplaced="YES" text="Humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uO-Ch-Yq1">
                                         <rect key="frame" x="0.0" y="118" width="84" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="9Ro-VF-VQl"/>
@@ -233,7 +233,7 @@
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rüzgar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmf-SA-V1w">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wind" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmf-SA-V1w">
                                         <rect key="frame" x="0.0" y="84" width="84" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="uB9-On-n29"/>
@@ -242,7 +242,7 @@
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sıcaklık" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u60-R1-31a">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Temp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u60-R1-31a">
                                         <rect key="frame" x="0.0" y="51" width="84" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="CAE-qb-R2D"/>
@@ -371,8 +371,8 @@
                                             <action selector="dismissBtnPressed" destination="N0t-k1-ayj" eventType="touchUpInside" id="o9F-cZ-Xmw"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitkilerim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-4P-Llb">
-                                        <rect key="frame" x="140" y="5" width="108" height="34"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Plants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qe-4P-Llb">
+                                        <rect key="frame" x="137" y="5" width="114" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="textColor" red="0.27450980390000002" green="0.40000000000000002" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -425,7 +425,7 @@
                                         <rect key="frame" x="0.0" y="8" width="428" height="100"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWq-51-guG" userLabel="book">
-                                        <rect key="frame" x="285.33333333333331" y="19.666666666666629" width="142.66666666666669" height="73.333333333333314"/>
+                                        <rect key="frame" x="285.33333333333331" y="19.666666666666629" width="142.66666666666669" height="73.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
@@ -436,7 +436,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fe-qA-ccc" userLabel="camera">
-                                        <rect key="frame" x="142.66666666666669" y="19.666666666666629" width="142.66666666666669" height="73.333333333333314"/>
+                                        <rect key="frame" x="142.66666666666669" y="19.666666666666629" width="142.66666666666669" height="73.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="">
                                             <imageReference key="image" image="camera.circle.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
@@ -453,7 +453,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmT-dn-7xG" userLabel="home">
-                                        <rect key="frame" x="0.0" y="19.666666666666629" width="142.66666666666666" height="73.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="19.666666666666629" width="142.66666666666666" height="73.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="house" catalog="system" title="" imagePadding="0.0">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
@@ -704,7 +704,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txr-d8-ibS">
-                                        <rect key="frame" x="0.0" y="19.666666666666629" width="142.66666666666666" height="73.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="19.666666666666629" width="142.66666666666666" height="73.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="house" catalog="system" title="" imagePadding="0.0">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
@@ -715,7 +715,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b1-05-CMF">
-                                        <rect key="frame" x="285.33333333333331" y="19.666666666666629" width="142.66666666666669" height="73.333333333333314"/>
+                                        <rect key="frame" x="285.33333333333331" y="19.666666666666629" width="142.66666666666669" height="73.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title="">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
@@ -726,7 +726,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaT-6k-YIk">
-                                        <rect key="frame" x="142.66666666666669" y="19.666666666666629" width="142.66666666666669" height="73.333333333333314"/>
+                                        <rect key="frame" x="142.66666666666669" y="19.666666666666629" width="142.66666666666669" height="73.333333333333329"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="">
                                             <imageReference key="image" image="camera.circle.fill" catalog="system" symbolScale="default" renderingMode="hierarchical">
@@ -781,8 +781,8 @@
                                             <action selector="dismissBtnPressed" destination="7XC-Jo-dcN" eventType="touchUpInside" id="Pa9-dS-cKO"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geçmiş" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-ce-hzG">
-                                        <rect key="frame" x="149.66666666666666" y="5" width="89" height="34"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGY-ce-hzG">
+                                        <rect key="frame" x="152.33333333333334" y="5" width="83.666666666666657" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <color key="textColor" red="0.27450980390000002" green="0.40000000000000002" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -853,7 +853,7 @@
                             <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="scaleToFill" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="6H4-nQ-qYK">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="predictionLabels" text="Bitki Adı" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVU-EZ-BNb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="predictionLabels" text="Plant Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVU-EZ-BNb">
                                 <rect key="frame" x="30" y="367" width="368" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="7b2-yY-24v"/>
@@ -972,13 +972,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="P5S-2r-BaR"/>
+        <segue reference="Gy0-dk-IeD"/>
         <segue reference="gID-6x-QRU"/>
-        <segue reference="R2v-zA-nfw"/>
+        <segue reference="zEs-5H-QVz"/>
         <segue reference="wlG-1m-kki"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Rectangle" width="392" height="139"/>
+        <image name="Rectangle" width="392" height="140"/>
         <image name="Subtract" width="390" height="80"/>
         <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
         <image name="back" width="498" height="884"/>

@@ -28,9 +28,7 @@
 		5C8FA25E2937AC80009CE9D7 /* PlantXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA25D2937AC80009CE9D7 /* PlantXTests.swift */; };
 		5C8FA2682937AC80009CE9D7 /* PlantXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2672937AC80009CE9D7 /* PlantXUITests.swift */; };
 		5C8FA26A2937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2692937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift */; };
-		5C9EC6CA296C91F400357647 /* aplant.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EC6C9296C91F400357647 /* aplant.mlmodel */; };
-		5C9EC6CC296C9B0100357647 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EC6CB296C9B0000357647 /* MobileNetV2.mlmodel */; };
-		5C9EC6CE296C9B0E00357647 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EC6CD296C9B0E00357647 /* FlowerClassifier.mlmodel */; };
+		5C9EC6D2296CEB0E00357647 /* plantClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EC6D1296CEB0E00357647 /* plantClassifier.mlmodel */; };
 		5CCE5C84293A5BEB006F0251 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C83293A5BEB006F0251 /* FindViewController.swift */; };
 		5CCE5C86293A5C02006F0251 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */; };
 		5CCE5C88293A5C11006F0251 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C87293A5C11006F0251 /* ResultViewController.swift */; };
@@ -79,9 +77,9 @@
 		5C8FA2632937AC80009CE9D7 /* PlantXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8FA2672937AC80009CE9D7 /* PlantXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantXUITests.swift; sourceTree = "<group>"; };
 		5C8FA2692937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantXUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5C9EC6C9296C91F400357647 /* aplant.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = aplant.mlmodel; path = ../../../../../../Desktop/modeller/aplant.mlmodel; sourceTree = "<group>"; };
-		5C9EC6CB296C9B0000357647 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNetV2.mlmodel; path = ../../../../../../Desktop/modeller/MobileNetV2.mlmodel; sourceTree = "<group>"; };
-		5C9EC6CD296C9B0E00357647 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FlowerClassifier.mlmodel; path = ../../../../../../Desktop/modeller/FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		5C9071FF296E286E000BC350 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		5C907200296E286E000BC350 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5C9EC6D1296CEB0E00357647 /* plantClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = plantClassifier.mlmodel; path = ../../../../../../Desktop/modeller/plantClassifier.mlmodel; sourceTree = "<group>"; };
 		5CCE5C83293A5BEB006F0251 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = PlantX/ViewControllers/HistoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		5CCE5C87293A5C11006F0251 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = PlantX/ViewControllers/ResultViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -216,9 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				5CF8D53B295672340023C62E /* label.txt */,
-				5C9EC6CB296C9B0000357647 /* MobileNetV2.mlmodel */,
-				5C9EC6CD296C9B0E00357647 /* FlowerClassifier.mlmodel */,
-				5C9EC6C9296C91F400357647 /* aplant.mlmodel */,
+				5C9EC6D1296CEB0E00357647 /* plantClassifier.mlmodel */,
 				5C5EA887295D19A6008829D7 /* PlantX3.mlmodel */,
 			);
 			path = Model;
@@ -313,6 +309,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 5C8FA2372937AC7E009CE9D7;
 			packageReferences = (
@@ -362,9 +359,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C9EC6CC296C9B0100357647 /* MobileNetV2.mlmodel in Sources */,
-				5C9EC6CA296C91F400357647 /* aplant.mlmodel in Sources */,
-				5C9EC6CE296C9B0E00357647 /* FlowerClassifier.mlmodel in Sources */,
 				5C592F102937CF7100D67289 /* HomeViewController.swift in Sources */,
 				5C8FA2442937AC7E009CE9D7 /* AppDelegate.swift in Sources */,
 				5C3D8B27294FA220009875BE /* FindViewController+PhotoPicker.swift in Sources */,
@@ -372,6 +366,7 @@
 				5C3F8D29294FD317000BF25C /* VNClassificationObservation+confidenceString.swift in Sources */,
 				5C3F8D2A294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				5C8FA24E2937AC7E009CE9D7 /* PlantX.xcdatamodeld in Sources */,
+				5C9EC6D2296CEB0E00357647 /* plantClassifier.mlmodel in Sources */,
 				5C3D8B25294FA1C6009875BE /* FindViewController+CameraPicker.swift in Sources */,
 				5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */,
 				5C3F8D25294FD29B000BF25C /* ImagePredictor.swift in Sources */,
@@ -421,6 +416,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C8FA24A2937AC7E009CE9D7 /* Base */,
+				5C9071FF296E286E000BC350 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -429,6 +425,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5C8FA2522937AC7F009CE9D7 /* Base */,
+				5C907200296E286E000BC350 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -440,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -500,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -554,15 +553,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlantX/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App need to location to serve better";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App need to location to serve better";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs location access for weather information";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location access for weather information";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -590,15 +591,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PlantX/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App need to location to serve better";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App need to location to serve better";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs location access for weather information";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location access for weather information";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

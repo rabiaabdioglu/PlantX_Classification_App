@@ -16,7 +16,7 @@ class FindViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var startupPrompts: UIStackView!
     var getImage :UIImage?
-    var plantName = "BitkiAdı"
+    var plantName = "Plant Name"
 
     
     
@@ -116,6 +116,8 @@ extension FindViewController {
         do {
             try self.imagePredictor.makePredictions(for: image,
                                                     completionHandler: imagePredictionHandler)
+            
+            
         } catch {
             print("Vision was unable to make a prediction...\n\n\(error.localizedDescription)")
         }
@@ -140,6 +142,9 @@ extension FindViewController {
 
     // Bitki adı ve yüzdelik oranları alma
 
+   
+    
+    // Bitki adı ve yüzdelik oranları alma
     private func formatPredictions(_ predictions: [ImagePredictor.Prediction]) -> [String] {
         // Vision sorts the classifications in descending confidence order.
         let topPredictions: [String] = predictions.prefix(predictionsToShow).map { prediction in

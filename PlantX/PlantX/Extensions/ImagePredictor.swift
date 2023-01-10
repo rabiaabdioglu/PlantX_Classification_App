@@ -34,10 +34,9 @@ class ImagePredictor {
     private static let imageClassifier = createImageClassifier()
 
     struct Prediction {
+       
         let classification: String
-
-        let confidencePercentage: String
-    }
+        let confidencePercentage: String    }
 
     typealias ImagePredictionHandler = (_ predictions: [Prediction]?) -> Void
 
@@ -72,48 +71,48 @@ class ImagePredictor {
         try handler.perform(requests)
     }
 
-  
-    private func visionRequestHandler(_ request: VNRequest, error: Error?) {
-        // Remove the caller's handler from the dictionary and keep a reference to it.
-        guard let predictionHandler = predictionHandlers.removeValue(forKey: request) else {
-            fatalError("Every request must have a prediction handler.")
-        }
+    
+      private func visionRequestHandler(_ request: VNRequest, error: Error?) {
+          // Remove the caller's handler from the dictionary and keep a reference to it.
+          guard let predictionHandler = predictionHandlers.removeValue(forKey: request) else {
+              fatalError("Every request must have a prediction handler.")
+          }
 
-        // Start with a `nil` value in case there's a problem.
-        var predictions: [Prediction]? = nil
+          // Start with a `nil` value in case there's a problem.
+          var predictions: [Prediction]? = nil
 
-        // Call the client's completion handler after the method returns.
-        defer {
-            // Send the predictions back to the client.
-            predictionHandler(predictions)
-        }
+          // Call the client's completion handler after the method returns.
+          defer {
+              // Send the predictions back to the client.
+              predictionHandler(predictions)
+          }
 
-        // Check for an error first.
-        if let error = error {
-            print("Vision image classification error...\n\n\(error.localizedDescription)")
-            return
-        }
+          // Check for an error first.
+          if let error = error {
+              print("Vision image classification error...\n\n\(error.localizedDescription)")
+              return
+          }
 
-        // Check that the results aren't `nil`.
-        if request.results == nil {
-            print("Vision request had no results.")
-            return
-        }
+          // Check that the results aren't `nil`.
+          if request.results == nil {
+              print("Vision request had no results.")
+              return
+          }
 
-        // Cast the request's results as an `VNClassificationObservation` array.
-        guard let observations = request.results as? [VNClassificationObservation] else {
-            // Image classifiers, like MobileNet, only produce classification observations.
-            // However, other Core ML model types can produce other observations.
-            // For example, a style transfer model produces `VNPixelBufferObservation` instances.
-            print("VNRequest produced the wrong result type: \(type(of: request.results)).")
-            return
-        }
+          // Cast the request's results as an `VNClassificationObservation` array.
+          guard let observations = request.results as? [VNClassificationObservation] else {
+              // Image classifiers, like MobileNet, only produce classification observations.
+              // However, other Core ML model types can produce other observations.
+              // For example, a style transfer model produces `VNPixelBufferObservation` instances.
+              print("VNRequest produced the wrong result type: \(type(of: request.results)).")
+              return
+          }
 
-        // Create a prediction array from the observations.
-        predictions = observations.map { observation in
-            // Convert each observation into an `ImagePredictor.Prediction` instance.
-            Prediction(classification: observation.identifier,
-                       confidencePercentage: observation.confidencePercentageString)
-        }
-    }
+          // Create a prediction array from the observations.
+          predictions = observations.map { observation in
+              // Convert each observation into an `ImagePredictor.Prediction` instance.
+              Prediction(classification: observation.identifier,
+                         confidencePercentage: observation.confidencePercentageString)
+          }
+      }
 }

@@ -62,7 +62,6 @@ class HistoryViewController: UIViewController  , UITableViewDelegate , UITableVi
         
         do {
             let results = try context.fetch(fetchRequest)
-            print(results)
             if results.count > 0 {
                 for result in results as! [NSManagedObject] {
                                 if let name = result.value(forKey: "plantName") as? String {

@@ -11,7 +11,7 @@ import CoreData
 class MyPlantsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
     
-    var plantName = "Bilinmiyor.."
+    var plantName = "Unknown.."
     var imageView: UIImageView!
     var isSaveButtonPressed = false
     
@@ -72,7 +72,6 @@ class MyPlantsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         do {
             let results = try context.fetch(fetchRequest)
-            print(results)
             if results.count > 0 {
                 for result in results as! [NSManagedObject] {
                                 if let name = result.value(forKey: "plantName") as? String {

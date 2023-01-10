@@ -1,18 +1,29 @@
 {
   "images" : [
     {
-      "filename" : "LOGO1.png",
-      "idiom" : "universal",
+      "filename" : "icon164 (1).png",
+      "idiom" : "iphone",
       "scale" : "1x"
     },
     {
-      "filename" : "LOGO2.png",
-      "idiom" : "universal",
+      "filename" : "icon164.png",
+      "idiom" : "iphone",
       "scale" : "2x"
     },
     {
-      "idiom" : "universal",
+      "filename" : "icon164 (2).png",
+      "idiom" : "iphone",
       "scale" : "3x"
+    },
+    {
+      "filename" : "icon490.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "icon490 (1).png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
   ],
   "info" : {

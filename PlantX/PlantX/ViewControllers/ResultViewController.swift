@@ -16,8 +16,8 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var predictionText: UITextView!
     @IBOutlet weak var ResultImage: UIImageView!
     @IBOutlet weak var predictionLabels: UILabel!
-    var plantText = "Yükleniyor..."
-    var plantInfo = (name : "Bitki bulunamadı" , percent : "%..")
+    var plantText = "Loading..."
+    var plantInfo = (name : " " , percent : "%..")
 
     
     
