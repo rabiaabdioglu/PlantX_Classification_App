@@ -28,7 +28,6 @@
 		5C8FA25E2937AC80009CE9D7 /* PlantXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA25D2937AC80009CE9D7 /* PlantXTests.swift */; };
 		5C8FA2682937AC80009CE9D7 /* PlantXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2672937AC80009CE9D7 /* PlantXUITests.swift */; };
 		5C8FA26A2937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2692937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift */; };
-		5C9EC6D2296CEB0E00357647 /* plantClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EC6D1296CEB0E00357647 /* plantClassifier.mlmodel */; };
 		5CCE5C84293A5BEB006F0251 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C83293A5BEB006F0251 /* FindViewController.swift */; };
 		5CCE5C86293A5C02006F0251 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */; };
 		5CCE5C88293A5C11006F0251 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C87293A5C11006F0251 /* ResultViewController.swift */; };
@@ -79,7 +78,6 @@
 		5C8FA2692937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5C9071FF296E286E000BC350 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		5C907200296E286E000BC350 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		5C9EC6D1296CEB0E00357647 /* plantClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = plantClassifier.mlmodel; path = ../../../../../../Desktop/modeller/plantClassifier.mlmodel; sourceTree = "<group>"; };
 		5CCE5C83293A5BEB006F0251 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = PlantX/ViewControllers/HistoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		5CCE5C87293A5C11006F0251 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = PlantX/ViewControllers/ResultViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -214,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				5CF8D53B295672340023C62E /* label.txt */,
-				5C9EC6D1296CEB0E00357647 /* plantClassifier.mlmodel */,
 				5C5EA887295D19A6008829D7 /* PlantX3.mlmodel */,
 			);
 			path = Model;
@@ -366,7 +363,6 @@
 				5C3F8D29294FD317000BF25C /* VNClassificationObservation+confidenceString.swift in Sources */,
 				5C3F8D2A294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				5C8FA24E2937AC7E009CE9D7 /* PlantX.xcdatamodeld in Sources */,
-				5C9EC6D2296CEB0E00357647 /* plantClassifier.mlmodel in Sources */,
 				5C3D8B25294FA1C6009875BE /* FindViewController+CameraPicker.swift in Sources */,
 				5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */,
 				5C3F8D25294FD29B000BF25C /* ImagePredictor.swift in Sources */,
