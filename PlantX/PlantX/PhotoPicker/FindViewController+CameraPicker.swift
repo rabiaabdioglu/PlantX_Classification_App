@@ -7,13 +7,16 @@ extension FindViewController: UIImagePickerControllerDelegate, UINavigationContr
         let cameraPicker = UIImagePickerController()
         cameraPicker.delegate = self
         cameraPicker.sourceType = .camera
+        
+        
         return cameraPicker
+        
     }
 
 
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-        picker.dismiss(animated: false)
+        
 
         // Always return the original image.
         guard let originalImage = info[UIImagePickerController.InfoKey.originalImage] else {
@@ -23,6 +26,7 @@ extension FindViewController: UIImagePickerControllerDelegate, UINavigationContr
         guard let photo = originalImage as? UIImage else {
             fatalError("The (Camera) Image Picker's image isn't a/n \(UIImage.self) instance.")
         }
+        picker.dismiss(animated: true, completion:  nil)
 
         userSelectedPhoto(photo)
     }

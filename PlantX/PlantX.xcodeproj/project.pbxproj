@@ -14,24 +14,25 @@
 		5C3F8D29294FD317000BF25C /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D27294FD317000BF25C /* VNClassificationObservation+confidenceString.swift */; };
 		5C3F8D2A294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D28294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		5C3F8D2C294FD48D000BF25C /* AIVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F8D2B294FD48D000BF25C /* AIVision.swift */; };
-		5C592F102937CF7100D67289 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C592F0F2937CF7100D67289 /* HomeViewController.swift */; };
-		5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C592F112937D04200D67289 /* MyPlantsViewController.swift */; };
 		5C5EA888295D19A6008829D7 /* PlantX3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C5EA887295D19A6008829D7 /* PlantX3.mlmodel */; };
-		5C6612072951CA9F003E0E1A /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C6612062951CA9F003E0E1A /* WikipediaKit */; };
 		5C75059B293A8D1800569883 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75059A293A8D1800569883 /* LaunchViewController.swift */; };
+		5C7811A7297562F8008C1805 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C7811A9297562F8008C1805 /* InfoPlist.strings */; };
 		5C8FA2442937AC7E009CE9D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */; };
 		5C8FA2462937AC7E009CE9D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2452937AC7E009CE9D7 /* SceneDelegate.swift */; };
-		5C8FA24B2937AC7E009CE9D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8FA2492937AC7E009CE9D7 /* Main.storyboard */; };
 		5C8FA24E2937AC7E009CE9D7 /* PlantX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA24C2937AC7E009CE9D7 /* PlantX.xcdatamodeld */; };
 		5C8FA2502937AC7F009CE9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8FA24F2937AC7F009CE9D7 /* Assets.xcassets */; };
-		5C8FA2532937AC7F009CE9D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8FA2512937AC7F009CE9D7 /* LaunchScreen.storyboard */; };
 		5C8FA25E2937AC80009CE9D7 /* PlantXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA25D2937AC80009CE9D7 /* PlantXTests.swift */; };
 		5C8FA2682937AC80009CE9D7 /* PlantXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2672937AC80009CE9D7 /* PlantXUITests.swift */; };
 		5C8FA26A2937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8FA2692937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift */; };
-		5CCE5C84293A5BEB006F0251 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C83293A5BEB006F0251 /* FindViewController.swift */; };
-		5CCE5C86293A5C02006F0251 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */; };
-		5CCE5C88293A5C11006F0251 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE5C87293A5C11006F0251 /* ResultViewController.swift */; };
-		5CF8D53C295672340023C62E /* label.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5CF8D53B295672340023C62E /* label.txt */; };
+		5CD14CD12972E79A007F8F5D /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5CD14CD02972E79A007F8F5D /* WikipediaKit */; };
+		5CD14CD82972E8AF007F8F5D /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD14CD32972E8AF007F8F5D /* FindViewController.swift */; };
+		5CD14CD92972E8AF007F8F5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD14CD42972E8AF007F8F5D /* HomeViewController.swift */; };
+		5CD14CDA2972E8AF007F8F5D /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD14CD52972E8AF007F8F5D /* HistoryViewController.swift */; };
+		5CD14CDB2972E8AF007F8F5D /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD14CD62972E8AF007F8F5D /* MyPlantsViewController.swift */; };
+		5CD14CDC2972E8AF007F8F5D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD14CD72972E8AF007F8F5D /* ResultViewController.swift */; };
+		5CD14CE32972E8F2007F8F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD14CDD2972E8F2007F8F5D /* LaunchScreen.storyboard */; };
+		5CD14CE42972E8F2007F8F5D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CD14CDF2972E8F2007F8F5D /* Info.plist */; };
+		5CD14CE52972E8F2007F8F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD14CE12972E8F2007F8F5D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C0B1B2B2972FF47002F272B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
 		5C13F0382952825200981AC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5C3D8B24294FA1C6009875BE /* FindViewController+CameraPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FindViewController+CameraPicker.swift"; sourceTree = "<group>"; };
 		5C3D8B26294FA220009875BE /* FindViewController+PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FindViewController+PhotoPicker.swift"; sourceTree = "<group>"; };
@@ -59,29 +61,27 @@
 		5C3F8D27294FD317000BF25C /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		5C3F8D28294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		5C3F8D2B294FD48D000BF25C /* AIVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIVision.swift; sourceTree = "<group>"; };
-		5C592F0F2937CF7100D67289 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5C592F112937D04200D67289 /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
 		5C5EA887295D19A6008829D7 /* PlantX3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PlantX3.mlmodel; sourceTree = "<group>"; };
 		5C75059A293A8D1800569883 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = SOURCE_ROOT; };
+		5C7811A329755F11008C1805 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C7811A429755F11008C1805 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C7811A8297562F8008C1805 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5C7811AA297562FB008C1805 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C8FA2402937AC7E009CE9D7 /* PlantX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C8FA2452937AC7E009CE9D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C8FA24A2937AC7E009CE9D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C8FA24D2937AC7E009CE9D7 /* PlantX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlantX.xcdatamodel; sourceTree = "<group>"; };
 		5C8FA24F2937AC7F009CE9D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5C8FA2522937AC7F009CE9D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5C8FA2542937AC7F009CE9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C8FA2592937AC80009CE9D7 /* PlantXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8FA25D2937AC80009CE9D7 /* PlantXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantXTests.swift; sourceTree = "<group>"; };
 		5C8FA2632937AC80009CE9D7 /* PlantXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8FA2672937AC80009CE9D7 /* PlantXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantXUITests.swift; sourceTree = "<group>"; };
 		5C8FA2692937AC80009CE9D7 /* PlantXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantXUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5C9071FF296E286E000BC350 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
-		5C907200296E286E000BC350 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		5CCE5C83293A5BEB006F0251 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
-		5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = PlantX/ViewControllers/HistoryViewController.swift; sourceTree = SOURCE_ROOT; };
-		5CCE5C87293A5C11006F0251 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = PlantX/ViewControllers/ResultViewController.swift; sourceTree = SOURCE_ROOT; };
-		5CF8D53B295672340023C62E /* label.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = label.txt; sourceTree = "<group>"; };
+		5CD14CD32972E8AF007F8F5D /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		5CD14CD42972E8AF007F8F5D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5CD14CD52972E8AF007F8F5D /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5CD14CD62972E8AF007F8F5D /* MyPlantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
+		5CD14CD72972E8AF007F8F5D /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C13F0392952825200981AC9 /* CoreLocation.framework in Frameworks */,
-				5C6612072951CA9F003E0E1A /* WikipediaKit in Frameworks */,
+				5CD14CD12972E79A007F8F5D /* WikipediaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,18 +128,6 @@
 			path = PhotoPicker;
 			sourceTree = "<group>";
 		};
-		5C3019D0294F749700ED1472 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				5CCE5C83293A5BEB006F0251 /* FindViewController.swift */,
-				5C592F112937D04200D67289 /* MyPlantsViewController.swift */,
-				5CCE5C87293A5C11006F0251 /* ResultViewController.swift */,
-				5CCE5C85293A5C02006F0251 /* HistoryViewController.swift */,
-				5C592F0F2937CF7100D67289 /* HomeViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		5C3F8D26294FD317000BF25C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,17 +163,18 @@
 		5C8FA2422937AC7E009CE9D7 /* PlantX */ = {
 			isa = PBXGroup;
 			children = (
+				5CD14CD22972E7EF007F8F5D /* ViewControllers */,
 				5CF8D534295668550023C62E /* Model */,
 				5C1792F3296B531800C896D7 /* PhotoPicker */,
 				5C3F8D26294FD317000BF25C /* Extensions */,
-				5C3019D0294F749700ED1472 /* ViewControllers */,
 				5C75059A293A8D1800569883 /* LaunchViewController.swift */,
 				5C8FA2432937AC7E009CE9D7 /* AppDelegate.swift */,
+				5CD14CDF2972E8F2007F8F5D /* Info.plist */,
+				5C7811A9297562F8008C1805 /* InfoPlist.strings */,
+				5CD14CDD2972E8F2007F8F5D /* LaunchScreen.storyboard */,
+				5CD14CE12972E8F2007F8F5D /* Main.storyboard */,
 				5C8FA2452937AC7E009CE9D7 /* SceneDelegate.swift */,
-				5C8FA2492937AC7E009CE9D7 /* Main.storyboard */,
 				5C8FA24F2937AC7F009CE9D7 /* Assets.xcassets */,
-				5C8FA2512937AC7F009CE9D7 /* LaunchScreen.storyboard */,
-				5C8FA2542937AC7F009CE9D7 /* Info.plist */,
 				5C8FA24C2937AC7E009CE9D7 /* PlantX.xcdatamodeld */,
 			);
 			path = PlantX;
@@ -208,10 +197,21 @@
 			path = PlantXUITests;
 			sourceTree = "<group>";
 		};
+		5CD14CD22972E7EF007F8F5D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CD14CD32972E8AF007F8F5D /* FindViewController.swift */,
+				5CD14CD52972E8AF007F8F5D /* HistoryViewController.swift */,
+				5CD14CD42972E8AF007F8F5D /* HomeViewController.swift */,
+				5CD14CD62972E8AF007F8F5D /* MyPlantsViewController.swift */,
+				5CD14CD72972E8AF007F8F5D /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		5CF8D534295668550023C62E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5CF8D53B295672340023C62E /* label.txt */,
 				5C5EA887295D19A6008829D7 /* PlantX3.mlmodel */,
 			);
 			path = Model;
@@ -234,7 +234,7 @@
 			);
 			name = PlantX;
 			packageProductDependencies = (
-				5C6612062951CA9F003E0E1A /* WikipediaKit */,
+				5CD14CD02972E79A007F8F5D /* WikipediaKit */,
 			);
 			productName = PlantX;
 			productReference = 5C8FA2402937AC7E009CE9D7 /* PlantX.app */;
@@ -305,12 +305,11 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				tr,
 			);
 			mainGroup = 5C8FA2372937AC7E009CE9D7;
 			packageReferences = (
-				5C6612052951CA9F003E0E1A /* XCRemoteSwiftPackageReference "WikipediaKit" */,
+				5CD14CCF2972E79A007F8F5D /* XCRemoteSwiftPackageReference "WikipediaKit" */,
 			);
 			productRefGroup = 5C8FA2412937AC7E009CE9D7 /* Products */;
 			projectDirPath = "";
@@ -328,10 +327,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C8FA2532937AC7F009CE9D7 /* LaunchScreen.storyboard in Resources */,
 				5C8FA2502937AC7F009CE9D7 /* Assets.xcassets in Resources */,
-				5C8FA24B2937AC7E009CE9D7 /* Main.storyboard in Resources */,
-				5CF8D53C295672340023C62E /* label.txt in Resources */,
+				5CD14CE32972E8F2007F8F5D /* LaunchScreen.storyboard in Resources */,
+				5CD14CE42972E8F2007F8F5D /* Info.plist in Resources */,
+				5CD14CE52972E8F2007F8F5D /* Main.storyboard in Resources */,
+				5C7811A7297562F8008C1805 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,22 +356,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C592F102937CF7100D67289 /* HomeViewController.swift in Sources */,
 				5C8FA2442937AC7E009CE9D7 /* AppDelegate.swift in Sources */,
 				5C3D8B27294FA220009875BE /* FindViewController+PhotoPicker.swift in Sources */,
 				5C5EA888295D19A6008829D7 /* PlantX3.mlmodel in Sources */,
+				5CD14CDC2972E8AF007F8F5D /* ResultViewController.swift in Sources */,
 				5C3F8D29294FD317000BF25C /* VNClassificationObservation+confidenceString.swift in Sources */,
+				5CD14CDB2972E8AF007F8F5D /* MyPlantsViewController.swift in Sources */,
 				5C3F8D2A294FD317000BF25C /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				5CD14CDA2972E8AF007F8F5D /* HistoryViewController.swift in Sources */,
 				5C8FA24E2937AC7E009CE9D7 /* PlantX.xcdatamodeld in Sources */,
 				5C3D8B25294FA1C6009875BE /* FindViewController+CameraPicker.swift in Sources */,
-				5C592F122937D04200D67289 /* MyPlantsViewController.swift in Sources */,
 				5C3F8D25294FD29B000BF25C /* ImagePredictor.swift in Sources */,
-				5CCE5C84293A5BEB006F0251 /* FindViewController.swift in Sources */,
 				5C8FA2462937AC7E009CE9D7 /* SceneDelegate.swift in Sources */,
 				5C3F8D2C294FD48D000BF25C /* AIVision.swift in Sources */,
-				5CCE5C86293A5C02006F0251 /* HistoryViewController.swift in Sources */,
 				5C75059B293A8D1800569883 /* LaunchViewController.swift in Sources */,
-				5CCE5C88293A5C11006F0251 /* ResultViewController.swift in Sources */,
+				5CD14CD92972E8AF007F8F5D /* HomeViewController.swift in Sources */,
+				5CD14CD82972E8AF007F8F5D /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,22 +408,37 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5C8FA2492937AC7E009CE9D7 /* Main.storyboard */ = {
+		5C7811A9297562F8008C1805 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C8FA24A2937AC7E009CE9D7 /* Base */,
-				5C9071FF296E286E000BC350 /* tr */,
+				5C7811A8297562F8008C1805 /* tr */,
+				5C7811AA297562FB008C1805 /* en */,
 			);
-			name = Main.storyboard;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5C8FA2512937AC7F009CE9D7 /* LaunchScreen.storyboard */ = {
+		5CD14CDD2972E8F2007F8F5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5C8FA2522937AC7F009CE9D7 /* Base */,
-				5C907200296E286E000BC350 /* tr */,
+				5C7811A329755F11008C1805 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CD14CDF2972E8F2007F8F5D /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C0B1B2B2972FF47002F272B /* en */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		5CD14CE12972E8F2007F8F5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C7811A429755F11008C1805 /* en */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -549,17 +564,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PlantX/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs location access for weather information";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location access for weather information";
+				INFOPLIST_FILE = PlantX/en.lproj/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uygulamanın bitki fotoğrafları çekmek için kameraya erişmesi gerekiyor. Kamera erişimine izin ver";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Uygulamanın hava durumu bilgilerini gösterebilmesi için konum erişimine ihtiyacı var";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Bir bitki fotoğrafı seçebilmeniz için uygulamanın fotoğraflarınıza erişmesi gerekiyor. Kamera erişimine izin ver";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Bir bitki fotoğrafı seçebilmeniz için uygulamanın fotoğraflarınıza erişmesi gerekiyor. Kamera erişimine izin ver";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -571,7 +586,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = RaSoft.PlantX;
+				PRODUCT_BUNDLE_IDENTIFIER = PlantX.RaSoft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -587,17 +602,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9RVC283PBZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PlantX/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs location access for weather information";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location access for weather information";
+				INFOPLIST_FILE = PlantX/en.lproj/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Uygulamanın bitki fotoğrafları çekmek için kameraya erişmesi gerekiyor. Kamera erişimine izin ver";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Uygulamanın hava durumu bilgilerini gösterebilmesi için konum erişimine ihtiyacı var";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Bir bitki fotoğrafı seçebilmeniz için uygulamanın fotoğraflarınıza erişmesi gerekiyor. Kamera erişimine izin ver";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Bir bitki fotoğrafı seçebilmeniz için uygulamanın fotoğraflarınıza erişmesi gerekiyor. Kamera erişimine izin ver";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -609,7 +624,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = RaSoft.PlantX;
+				PRODUCT_BUNDLE_IDENTIFIER = PlantX.RaSoft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -741,20 +756,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5C6612052951CA9F003E0E1A /* XCRemoteSwiftPackageReference "WikipediaKit" */ = {
+		5CD14CCF2972E79A007F8F5D /* XCRemoteSwiftPackageReference "WikipediaKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Raureif/WikipediaKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C6612062951CA9F003E0E1A /* WikipediaKit */ = {
+		5CD14CD02972E79A007F8F5D /* WikipediaKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5C6612052951CA9F003E0E1A /* XCRemoteSwiftPackageReference "WikipediaKit" */;
+			package = 5CD14CCF2972E79A007F8F5D /* XCRemoteSwiftPackageReference "WikipediaKit" */;
 			productName = WikipediaKit;
 		};
 /* End XCSwiftPackageProductDependency section */

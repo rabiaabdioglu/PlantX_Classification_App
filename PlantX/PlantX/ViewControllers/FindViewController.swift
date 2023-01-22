@@ -18,11 +18,15 @@ class FindViewController: UIViewController {
     var getImage :UIImage?
     var plantName = "Plant Name"
 
+    @IBOutlet weak var text2: UILabel!
     
+    @IBOutlet weak var text1: UILabel!
+    
+    @IBOutlet weak var text3: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        showText()
   
     }
    
@@ -63,17 +67,30 @@ class FindViewController: UIViewController {
  extension FindViewController {
       
      @IBAction func isCapture() {
-         
+         hideText()
          present(cameraPicker, animated: false)
          
      }
 
         /// The method the storyboard calls when the user take photo
         @IBAction func selectFromLibrary() {
+            hideText()
             present(photoPicker, animated: false)
        
 
         }
+     func hideText(){
+         text1.isHidden = true
+         text2.isHidden = true
+         text3.isHidden = true
+     }
+     func showText(){
+         text1.isHidden = false
+         text2.isHidden = false
+         text3.isHidden = false
+     }
+     
+     
 }
 
 

@@ -1,0 +1,4 @@
+"NSLocationWhenInUseUsageDescription" = "Uygulamanın hava durumu bilgilerini gösterebilmesi için konum erişimine ihtiyacı var.";
+"NSCameraUsageDescription" = "Uygulamanın bitki fotoğrafları çekmek için kameraya erişmesi gerekiyor. Kamera erişimine izin ver";
+"NSPhotoLibraryUsageDescription" = "Bir bitki fotoğrafı seçebilmeniz için uygulamanın fotoğraflarınıza erişmesi gerekiyor.";
+"NSPhotoLibraryAddUsageDescription" =  "Bir bitki fotoğrafı seçebilmeniz için uygulamanın fotoğraflarınıza erişmesi gerekiyor.";

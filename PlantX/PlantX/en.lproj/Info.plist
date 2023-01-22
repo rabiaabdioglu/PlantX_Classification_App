@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Uygulamanın hava durumu bilgilerini gösterebilmesi için konum erişimine ihtiyacı var.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Uygulamanın bitki fotoğrafları çekmek için kameraya erişmesi gerekiyor. Kamera erişimine izin ver.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Bir bitki fotoğrafı seçebilmeniz için uygulamanın fotoğraflarınıza erişmesi gerekiyor.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Bir bitki fotoğrafı seçebilmeniz için uygulamanın fotoğraflarınıza erişmesi gerekiyor.</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -1,0 +1,5 @@
+"NSLocationWhenInUseUsageDescription" = "The app needs location access to be able to show weather information.";
+"NSCameraUsageDescription" = "The app needs access to the camera to take plant photos. Allow camera access";
+"NSPhotoLibraryUsageDescription" = "The app needs access to your photos before you can choose a plant photo. ";
+"NSPhotoLibraryAddUsageDescription" = "The app needs access to your photos before you can choose a plant photo. ";
+
