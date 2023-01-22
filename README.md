@@ -18,6 +18,6 @@ Linkedin : www.linkedin.com/in/rabiaabdioglu
 
 Github Dokumanlar :  https://github.com/rabiaabdioglu/PlantX/tree/main/PlantX/Document
 
-Appstore  : 
+Appstore  : https://apps.apple.com/tr/app/plantx/id1665376372?l=tr
 
 PlantNet Train : https://colab.research.google.com/drive/1RDkgMG_KoyjOqp3a3lv1EOZ0ki_BcMtu
