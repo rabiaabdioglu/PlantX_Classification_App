@@ -18,7 +18,7 @@ class HomeViewController: UIViewController  {
     @IBOutlet weak var windLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     
-    var apiId = "10b763fe07b5a2175d901437d14e7484"
+    var apiId = "xxxxxxxxxxxxx"
     var lat = 40.746213
     var lon = 30.034257
     
